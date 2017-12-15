@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta char="UTF-8">
+	<title>Carousel.html</title>
+	<script src="../public/js/jQuery.js"></script>
+	<style>
+	    *{
+	    	margin:0px;
+	    	padding:0px;
+	    }
+		.window{
+			width:1920px;
+			height:470px;
+			position:relative;
+			overflow:hidden;
+			
+		}
+		.pictureReel{
+		position:absolute;
+
+
+		}
+		.pictureReel img{
+			float:left;
+
+
+		}
+		.paging{
+			position:absolute;
+			bottom:10px;
+			right:900px;
+			width:200px;
+			height:20px;
+		
+			display:none;
+		}
+		.paging a{
+			text-decoration:none;
+			border-radius:50%;
+			box-shadow:0 0 3px;
+			color:#fff;
+			background:#000;
+			width:20px;
+			height:20px;
+			display:inline-block;
+			line-height:20px;
+			text-align:center;
+		}
+		.paging a.active{
+			background:#dd102e;
+
+		}
+		.active :hover{
+			font-weight:bold;
+		}
+	</style>
+</head>
+<boby>
+	<div class="carousel">
+		<div class="window">
+			<div class="pictureReel">
+				<img src="../home/imgs/1.jpg"></img>
+				<img src="../home/imgs/2.jpg"></img>
+				<img src="../home/imgs/3.jpg"></img>
+				<img src="../home/imgs/4.jpg"></img>
+				<img src="../home/imgs/5.jpg"></img>
+				<img src="../home/imgs/6.jpg"></img>
+				<img src="../home/imgs/7.jpg"></img>
+			</div>
+			<div class="paging">
+				<a href="#" rel="1">1</a>
+				<a href="#" rel="2">2</a>
+				<a href="#" rel="3">3</a>
+				<a href="#" rel="4">4</a>
+				<a href="#" rel="5">5</a>
+				<a href="#" rel="6">6</a>
+				<a href="#" rel="7">7</a>
+			</div>
+		</div>
+	</div>
+</boby>
+<script>
+$(".paging").show();
+$(".paging a:first").addClass("active");
+
+width=$(".window").width();
+size=$(".pictureReel img").size();
+tollWidth=width*size;
+$(".pictureReel").css({"width":tollWidth+"px"});
+
+
+rotate=function(){
+	
+	number=$active.attr("rel");
+	moveNumber=(number-1)*width;
+	$(".paging a").removeClass("active");
+	$active.addClass("active");
+	$(".pictureReel").animate({left:-moveNumber},500);
+
+};
+
+rotateSwitch=function(){
+	play=setInterval(function(){
+		$active=$(".paging a.active").next();
+
+		if($active.length===0){
+			$active=$(".paging a:first");
+		}
+		rotate();
+		console.log(number);
+	},2000)
+};
+
+rotateSwitch();
+$(".pictureReel").hover(function(){
+	clearInterval(play);
+},function(){
+	rotateSwitch();
+});
+
+$(".paging a").click(function(){
+	clearInterval(play);
+	$active=$(this);
+	rotate();
+	rotateSwitch();
+})
+</script>
+</html>

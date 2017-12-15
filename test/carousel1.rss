@@ -1,0 +1,17 @@
+
+.main{
+	position:relative;
+	margin:0 auto;
+	background:#ccc;
+	outline:1px solid #eee;
+}
+
+.main img{
+	float:left;
+}
+
+.picButton{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
