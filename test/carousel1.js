@@ -18,20 +18,32 @@ $(function(){
 		// 	number=$active.attr("rel");
 	
        $(".picWarp").animate({left:-width*number+"px"},500);
-       $(".picButton a").removeClass();
-       $active.addClass("active");
+       // $(".picButton a").removeClass();
+       // $active.addClass("active");
 	}
 	rotateSwitch=function(){
 		play=setInterval(function(){
 			$active=$(".picButton a.active").next();
-			if($active.length===0)
-			{
-				$active=$(".picButton a:first");
-			}
-			number=$active.attr("rel");
+			console.log($active.attr("rel"));
+			if(Number($active.attr("rel"))===3){
+				$(".picButton a").removeClass("active");
+			    $(".picButton a:first").addClass("active");
+                number=$active.attr("rel");
+			   $(".picWarp").animate({left:-width*number+"px"},500,function(){
+			   	$(".picWarp").css({"left":"0"});
+			   });
+			    $active=$(".picButton a:first");
+				number=$active.attr("rel");
+				rotate();
+			}else{
+					number=$active.attr("rel");
+					rotate();
+					$(".picButton a").removeClass("active");
+           			$active.addClass("active");
+			 	};
+			 	
 			
-			rotate();
-
+			
 		},1000);
 	};
     $(".picButton a").click(function(){
@@ -39,6 +51,7 @@ $(function(){
     	$active=$(this);
     	number=$active.attr("rel");
     	rotate();
+
     	setTimeout("rotateSwitch()",1000);
     	return false;
     });

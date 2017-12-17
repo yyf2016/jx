@@ -6,7 +6,7 @@
 	outline:3px solid #0ff;
 	height:100px;
 	width:200px;
-	/*overflow:hidden;*/
+	overflow:hidden;
 }
 .picWarp{
 	position:absolute;
@@ -35,4 +35,7 @@ a{
 	position:absolute;
 	bottom:15px;
 	right:15px;
+}
+.picButton .hide{
+	display:none;
 }
