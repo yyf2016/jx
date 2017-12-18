@@ -660,7 +660,7 @@ h4{
 .firstFloorW-right-middle{
 	width:270px;
 	height:158px;
-    background:#f00;
+   /* background:#f00;*/
 }
 
 .firstFloorW-right-bottom{
@@ -669,4 +669,46 @@ h4{
     background:#eee;
 }
 
+/*一楼中部跑马灯start*/
+.mainFm{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpFm{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainFm img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.active{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonFm{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonFm .hide{
+	display:none;
+}
+/*一楼中部跑马灯end*/
 /*一楼右边部分 end*/

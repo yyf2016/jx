@@ -4,20 +4,17 @@
 	margin:0 auto;
 	background:#ccc;
 	outline:3px solid #0ff;
-	height:100px;
-	width:200px;
-	overflow:hidden;
+	
+	/*overflow:hidden;*/
 }
 .picWarp{
 	position:absolute;
-	height:100px;
-	width:600px;
+
 }
 
 .main img{
 	float:left;
-	height:100px;
-	width:200px;
+	
 }
 a{
 	text-decoration:none;
