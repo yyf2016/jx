@@ -690,7 +690,7 @@ h4{
 	/*height:100px;
 	width:200px;*/
 }
-..mainFm a{
+.mainFm a{
 	text-decoration:none;
 	color:#000;
    /* padding:5px;*/
@@ -711,4 +711,46 @@ h4{
 	display:none;
 }
 /*一楼中部跑马灯end*/
+/*一楼底部跑马灯start*/
+.mainFb{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpFb{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainFb img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainFb a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activeFb{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonFb{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonFb .hideFb{
+	display:none;
+}
+/*一楼底部跑马灯end*/
 /*一楼右边部分 end*/

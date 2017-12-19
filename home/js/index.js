@@ -72,7 +72,7 @@ $(function(){
 	sizeFm=$(".picWarpFm img").length; 
 	
 	totalWidthFm=widthFm*sizeFm;
-	$(".picButtonFm a:first").addClass("active");
+	$(".picButtonFm a:first").addClass("activeFm");
 	$(".mainFm .picWarpFm").css({"width":totalWidthFm+"px"});
 	$(".mainFm").css({"width":widthFm+"px","height":heightFm+"px"});
 	// rotate=function(){
@@ -89,11 +89,11 @@ $(function(){
 	// }
 	rotateSwitchFm=function(){
 		playFm=setInterval(function(){
-			$activeFm=$(".picButtonFm a.active").next();
+			$activeFm=$(".picButtonFm a.activeFm").next();
 			// console.log($active.attr("rel"));
 			if(Number($activeFm.attr("rel"))===3){
-				$(".picButtonFm a").removeClass("active");
-			    $(".picButtonFm a:first").addClass("active");
+				$(".picButtonFm a").removeClass("activeFm");
+			    $(".picButtonFm a:first").addClass("activeFm");
                 numberFm=$activeFm.attr("rel");
 			   $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500,function(){
 			   	$(".picWarpFm").css({"left":"0"});
@@ -104,8 +104,8 @@ $(function(){
 			}else{
 					numberFm=$activeFm.attr("rel");
 					 $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500);
-					$(".picButtonFm a").removeClass("active");
-           			$activeFm.addClass("active");
+					$(".picButtonFm a").removeClass("activeFm");
+           			$activeFm.addClass("activeFm");
 			 	};
 			 	
 			
@@ -118,7 +118,7 @@ $(function(){
     	numberFm=$activeFm.attr("rel");
     	 $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500);
 
-    	setTimeout("rotateSwitch()",1000);
+    	setTimeout("rotateSwitchFm()",1000);
     	return false;
     });
     $(".picWarpFm a").hover(
@@ -131,5 +131,70 @@ $(function(){
 	rotateSwitchFm();
 
 // 中部跑马灯end
+// 底部跑马灯start
+    widthFb=$(".picWarpFb img:first").width();
+	heightFb=$(".picWarpFb img:first").height();
+	sizeFb=$(".picWarpFb img").length; 
+	
+	totalWidthFb=widthFb*sizeFb;
+	$(".picButtonFb a:first").addClass("activeFb");
+	$(".mainFb .picWarpFb").css({"width":totalWidthFb+"px"});
+	$(".mainFb").css({"width":widthFb+"px","height":heightFb+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchFb=function(){
+		playFb=setInterval(function(){
+			$activeFb=$(".picButtonFb a.activeFb").next();
+			// console.log($active.attr("rel"));
+			if(Number($activeFb.attr("rel"))===3){
+				$(".picButtonFb a").removeClass("activeFb");
+			    $(".picButtonFb a:first").addClass("activeFb");
+                numberFb=$activeFb.attr("rel");
+			   $(".picWarpFb").animate({left:-widthFb*numberFb+"px"},500,function(){
+			   	$(".picWarpFb").css({"left":"0"});
+			   });
+			    $activeFb=$(".picButtonFb a:first");
+				numberFb=$activeFb.attr("rel");
+				 $(".picWarpFb").animate({left:-widthFb*numberFb+"px"},500);
+			}else{
+					numberFb=$activeFb.attr("rel");
+					 $(".picWarpFb").animate({left:-widthFb*numberFb+"px"},500);
+					$(".picButtonFb a").removeClass("activeFb");
+           			$activeFb.addClass("activeFb");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonFb a").click(function(){
+    	clearInterval(playFb);
+    	$activeFb=$(this);
+    	numberFb=$activeFm.attr("rel");
+    	 $(".picWarpFb").animate({left:-widthFb*numberFb+"px"},500);
+
+    	setTimeout("rotateSwitchFb()",1000);
+    	return false;
+    });
+    $(".picWarpFb a").hover(
+    	function(){
+    		clearInterval(playFb);
+    	},
+    	function(){
+    		rotateSwitchFb();
+    	})
+	rotateSwitchFb();
+
+// 底部跑马灯end
 }
 )
