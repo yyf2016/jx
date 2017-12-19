@@ -48,7 +48,7 @@ $(function(){
 					$active=$(".paging a:first");
 				}
 				rotate();
-				console.log(number);
+				// console.log(number);
 			},2000)
 			};
 
@@ -67,14 +67,14 @@ $(function(){
 			})
 // 顶部跑马灯end
 // 中部跑马灯start
-    width=$(".picWarpFm img:first").width();
-	height=$(".picWarpFm img:first").height();
-	size=$(".picWarpFm img").length; 
+    widthFm=$(".picWarpFm img:first").width();
+	heightFm=$(".picWarpFm img:first").height();
+	sizeFm=$(".picWarpFm img").length; 
 	
-	totalWidth=width*size;
+	totalWidthFm=widthFm*sizeFm;
 	$(".picButtonFm a:first").addClass("active");
-	$(".mainFm .picWarpFm").css({"width":totalWidth+"px"});
-	$(".mainFm").css({"width":width+"px","height":height+"px"});
+	$(".mainFm .picWarpFm").css({"width":totalWidthFm+"px"});
+	$(".mainFm").css({"width":widthFm+"px","height":heightFm+"px"});
 	// rotate=function(){
 	// 	// $active=$("..picButtonFm a.active").next();
 	// 	// 	if($active.length===0)
@@ -87,25 +87,25 @@ $(function(){
  //       // $("..picButtonFm a").removeClass();
  //       // $active.addClass("active");
 	// }
-	rotateSwitch=function(){
-		play=setInterval(function(){
-			$active=$(".picButtonFm a.active").next();
+	rotateSwitchFm=function(){
+		playFm=setInterval(function(){
+			$activeFm=$(".picButtonFm a.active").next();
 			// console.log($active.attr("rel"));
-			if(Number($active.attr("rel"))===3){
+			if(Number($activeFm.attr("rel"))===3){
 				$(".picButtonFm a").removeClass("active");
 			    $(".picButtonFm a:first").addClass("active");
-                number=$active.attr("rel");
-			   $(".picWarpFm").animate({left:-width*number+"px"},500,function(){
+                numberFm=$activeFm.attr("rel");
+			   $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500,function(){
 			   	$(".picWarpFm").css({"left":"0"});
 			   });
-			    $active=$(".picButtonFm a:first");
-				number=$active.attr("rel");
-				 $(".picWarpFm").animate({left:-width*number+"px"},500);
+			    $activeFm=$(".picButtonFm a:first");
+				numberFm=$activeFm.attr("rel");
+				 $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500);
 			}else{
-					number=$active.attr("rel");
-					 $(".picWarpFm").animate({left:-width*number+"px"},500);
+					numberFm=$activeFm.attr("rel");
+					 $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500);
 					$(".picButtonFm a").removeClass("active");
-           			$active.addClass("active");
+           			$activeFm.addClass("active");
 			 	};
 			 	
 			
@@ -113,22 +113,22 @@ $(function(){
 		},1000);
 	};
     $(".picButtonFm a").click(function(){
-    	clearInterval(play);
-    	$active=$(this);
-    	number=$active.attr("rel");
-    	 $(".picWarpFm").animate({left:-width*number+"px"},500);
+    	clearInterval(playFm);
+    	$activeFm=$(this);
+    	numberFm=$activeFm.attr("rel");
+    	 $(".picWarpFm").animate({left:-widthFm*numberFm+"px"},500);
 
     	setTimeout("rotateSwitch()",1000);
     	return false;
     });
     $(".picWarpFm a").hover(
     	function(){
-    		clearInterval(play);
+    		clearInterval(playFm);
     	},
     	function(){
-    		rotateSwitch();
+    		rotateSwitchFm();
     	})
-	rotateSwitch();
+	rotateSwitchFm();
 
 // 中部跑马灯end
 }

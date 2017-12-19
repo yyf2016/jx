@@ -690,13 +690,13 @@ h4{
 	/*height:100px;
 	width:200px;*/
 }
-a{
+..mainFm a{
 	text-decoration:none;
 	color:#000;
    /* padding:5px;*/
 
 }
-.active{
+.activeFm{
 	background:#f00;
 	color:#fff;
 
@@ -707,7 +707,7 @@ a{
 	bottom:15px;
 	right:15px;
 }
-.picButtonFm .hide{
+.picButtonFm .hideFm{
 	display:none;
 }
 /*一楼中部跑马灯end*/
