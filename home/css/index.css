@@ -625,6 +625,7 @@ h4{
 .firstFloorW-right-up{
 	width:270px;
 	height:160px;
+	position:relative;
 }
 .firstFloorW-right-up li{
 	width:133px;
@@ -635,13 +636,15 @@ h4{
 	line-height:35px;
 	text-align:center;
 	border:1px solid #ccc;
-	position:relative;
+	/*position:relative;*/
 }
 .firstFloorW-right-up-inside{
 	width:270px;
 	height:105px;
 	background:#ccc;
 	position:absolute;
+	left:0px;
+	top:37px;
 
 
 }

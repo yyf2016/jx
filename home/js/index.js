@@ -66,6 +66,15 @@ $(function(){
 			rotateSwitch();
 			})
 // 顶部跑马灯end
+// 一楼右侧部分start
+$(".firstl .firstFloorW-right-up-inside:last").hide();
+$(".firstFloorW-right-up .firstl").hover(function(){
+$(".firstFloorW-right-up .firstl").not(this).find(".firstFloorW-right-up-inside").hide();	
+$(this).find(".firstFloorW-right-up-inside").show();
+
+})
+
+// 一楼右侧部分end
 // 中部跑马灯start
     widthFm=$(".picWarpFm img:first").width();
 	heightFm=$(".picWarpFm img:first").height();
