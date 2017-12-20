@@ -69,9 +69,10 @@ $(function(){
 // 一楼右侧部分start
 $(".firstl .firstFloorW-right-up-inside:last").hide();
 $(".firstFloorW-right-up .firstl").hover(function(){
-$(".firstFloorW-right-up .firstl").not(this).find(".firstFloorW-right-up-inside").hide();	
+$(".firstFloorW-right-up .firstl").not(this).find(".firstFloorW-right-up-inside").hide();
+$(".firstFloorW-right-up li").not(this).css({"border-top":"1px solid #fff"});
 $(this).find(".firstFloorW-right-up-inside").show();
-
+$(this).css({"border-top":"2px solid #f00"});
 })
 
 // 一楼右侧部分end
