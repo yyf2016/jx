@@ -522,7 +522,7 @@ h4{
 .mainWrapK{
 	width:1200px;
 	margin:0 auto;
-	height:2000px;
+/*	height:2000px;*/
 	position:relative;
 	/*position:fixed;*/
 }
@@ -765,3 +765,22 @@ h4{
 }
 /*一楼底部跑马灯end*/
 /*一楼右边部分 end*/
+/*中间广告位start*/
+.middleAd{
+	width:1200px;
+	height:130px;
+	margin:10px auto;
+	background:url(../imgs/middleAdBg.jpg) no-repeat 0px 0px;
+	
+	
+}
+.clear{
+	clear:both;
+}
+
+.middleFloatAd{
+	float:left;
+	margin:0px 55px;
+}
+
+/*中间广告位end*/
