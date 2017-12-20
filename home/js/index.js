@@ -66,6 +66,14 @@ $(function(){
 			rotateSwitch();
 			})
 // 顶部跑马灯end
+// 一楼左侧部分start
+$(".firstFloorWHead .headLi").hover(function(){
+     $(".firstFloorWHead .headLi").not(this).find(".firstFloorWTail").hide();
+     $(".firstFloorWHead .headLi").not(this).css({"border-top":"1px solid #ccc"});
+     $(this).find(".firstFloorWTail").show();
+     $(this).css({"border-top":"2px solid #f00"});
+});
+// 一楼左侧部分end
 // 一楼右侧部分start
 $(".firstl .firstFloorW-right-up-inside:last").hide();
 $(".firstFloorW-right-up .firstl").hover(function(){

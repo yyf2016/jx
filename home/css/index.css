@@ -561,6 +561,9 @@ h4{
 	float:left;
 	margin-left:10px;
 }
+.firstFloorWHead{
+	position:relative;
+}
 .firstFloorWHead .headLi{
 	width:182px;
 	height:35px;
@@ -569,13 +572,17 @@ h4{
 	list-style:none;
 	text-align:center;
 	line-height:35px;
-	border: 1px solid #fff;
+	border: 1px solid #ccc;
+	border-right: 0px;
 
 }
 .firstFloorWTail{
 	width:920px;
-	height:465px;
+	height:463px;
 	background:#ccc;
+	position:absolute;
+	left:0px;
+	top:37px;
 
 }
 .firstFloorWTail .jiuTuLi{
@@ -591,7 +598,7 @@ h4{
 }
 .firstFloorWTail .jiuTu{
 	position:relative;
-}
+}s
 
 .jiuTu img{
 	display:block;
