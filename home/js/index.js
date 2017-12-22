@@ -214,5 +214,30 @@ $(this).css({"border-top":"2px solid #f00"});
 	rotateSwitchFb();
 
 // 底部跑马灯end
+// 倒计时start
+time=18000;
+countTime=function(){
+     time=time-1;
+     hour="0"+parseInt(time/3600);
+     minute=parseInt((time%3600)/60);
+     second=(time%3600)%60;
+     if(parseInt(second/10)<1){
+     	second="0"+second;
+     }
+     $(".spanH").html(hour);
+     $(".spanM").html(minute);
+     $(".spanS").html(second);
+}
+play1=setInterval("countTime()",1000);
+
+// 倒计时end
+$(".fourthADIconLi:first").css({"background-color":"#f00"});
+$(".fourthADIconLi").click(function(){
+	$(".fourthADIconLi").css({"background-color":"#ccc"});
+	$(this).css({"background-color":"#f00"});
+    numberLi=$(this).attr("rel")-1;
+    numberLift=numberLi*1200;
+    $(".fourthADTail").animate({left:-numberLift+"px"},1000);
+});
 }
 )

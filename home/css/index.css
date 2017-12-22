@@ -784,3 +784,101 @@ h4{
 }
 
 /*中间广告位end*/
+/*第四部分优惠推荐start*/
+.fourthAD{
+	width:1200px;
+	height:300px;
+	margin:10px auto;
+	position:relative;
+	border:1px solid #ccc;
+}
+.fourthADHead{
+	width:1200px;
+	height:40px;
+	padding:30px 0px 10px 0px;
+
+}
+.fourthADIcon{
+	position:absolute;
+	top:50px;
+	right:0px;
+}
+.fourthADIcon li{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	background-color:#ccc;
+	margin:5px;
+
+}
+.fourthADHead span{
+	line-height:20px;
+	font-size:17px;
+}
+.yhtj{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat ;
+	line-height:20px;
+	margin:20px 10px 0px 1px;
+}
+.fourthADTail{
+	width:3600px;
+	height:260px;
+	background-color:#e00;
+	position:relative;
+}
+.fourthADTail li{
+	float:left;
+	list-style:none;
+}
+.fourthADList{
+	width:200px;
+	height:260px;
+	background-color:#0f0;
+	position:relative;
+}
+.fourthADList .fourthADListC{
+  
+   font-size:12px;
+   text-overflow:ellipsis;
+   overflow:hidden;
+   white-space:nowrap;
+}
+.fourthADListC a{
+   text-decoration:none;
+   color:#000;
+}
+.fourthADList p{
+	font-size:15px;
+	color:#f00;
+} 
+.fourthADListF{
+	position:absolute;
+	top:0px;
+	right:7px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png) no-repeat;
+}
+.fourthADListF p{
+	text-align:center;
+	color:#fff;
+}
+.fourthADCounter{
+	font-size:12px;
+}
+.fourthADCounter span{
+	color:#f00;
+}
+.fourthADCounter{
+	margin:10px 5px;
+}
+.fourthADIcon{
+	cursor:pointer;
+}
+.ADActive{
+	background-color:#f00;
+}
+/*第四部分优惠推荐end*/
