@@ -231,13 +231,52 @@ countTime=function(){
 play1=setInterval("countTime()",1000);
 
 // 倒计时end
+// 优惠促销跑马灯start
 $(".fourthADIconLi:first").css({"background-color":"#f00"});
+$(".fourthADIconLi:first").addClass("ADActive");
 $(".fourthADIconLi").click(function(){
+	$(".fourthADIconLi").removeClass("ADActive");
+	$(this).addClass("ADActive");
 	$(".fourthADIconLi").css({"background-color":"#ccc"});
 	$(this).css({"background-color":"#f00"});
     numberLi=$(this).attr("rel")-1;
     numberLift=numberLi*1200;
     $(".fourthADTail").animate({left:-numberLift+"px"},1000);
 });
+// 优惠左箭头指示灯start
+$(".fourthADLeft").click(function(){
+	activeIconSE=$(".ADActive").prev();
+	$(".fourthADIconLi").css({"background-color":"#ccc"});
+	if(activeIconSE.length===0){
+		activeIconSE=$(".fourthADIconLi:first");
+		
+	}
+  
+	$(".fourthADIconLi").removeClass("ADActive");
+	activeIconSE.addClass("ADActive");
+	activeIconSE.css({"background-color":"#f00"});
+	numberLi=activeIconSE.attr("rel")-1;
+	numberLift=numberLi*1200;
+    $(".fourthADTail").animate({left:-numberLift+"px"},1000);
+})
+// 优惠左箭头指示灯end
+// 优惠右箭头指示灯start
+$(".fourthADRight").click(function(){
+	activeIconSE=$(".ADActive").next();
+	$(".fourthADIconLi").css({"background-color":"#ccc"});
+	if(activeIconSE.length===0){
+		activeIconSE=$(".fourthADIconLi:last")
+		
+	}
+	
+	$(".fourthADIconLi").removeClass("ADActive");
+	activeIconSE.addClass("ADActive");
+	activeIconSE.css({"background-color":"#f00"});
+	numberLi=activeIconSE.attr("rel")-1;
+	numberLift=numberLi*1200;
+    $(".fourthADTail").animate({left:-numberLift+"px"},1000);
+})
+// 优惠右箭头指示灯end
+// 优惠促销跑马灯end
 }
 )

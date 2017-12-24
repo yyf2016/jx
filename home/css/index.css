@@ -596,9 +596,14 @@ h4{
 	float:left;
 	margin-top:20px;
 }
+.jiuTuLi a{
+	text-decoration:none;
+	color:#000;
+	
+}
 .firstFloorWTail .jiuTu{
 	position:relative;
-}s
+}
 
 .jiuTu img{
 	display:block;
@@ -656,7 +661,7 @@ h4{
 
 
 }
-.firstFloorW-right-up-inside li{
+.firstFloorW-right-up-inside li{jiu
 	float:left;
 	list-style:none;
 	font-size:12px;
@@ -787,10 +792,11 @@ h4{
 /*第四部分优惠推荐start*/
 .fourthAD{
 	width:1200px;
-	height:300px;
+	height:320px;
 	margin:10px auto;
 	position:relative;
 	border:1px solid #ccc;
+	position:relative;
 }
 .fourthADHead{
 	width:1200px;
@@ -823,11 +829,17 @@ h4{
 	line-height:20px;
 	margin:20px 10px 0px 1px;
 }
+.fourthADTailC{
+	width:1200px;
+	height:260px;
+	overflow:hidden;
+}
 .fourthADTail{
 	width:3600px;
 	height:260px;
-	background-color:#e00;
+	/*background-color:#e00;*/
 	position:relative;
+	
 }
 .fourthADTail li{
 	float:left;
@@ -836,8 +848,9 @@ h4{
 .fourthADList{
 	width:200px;
 	height:260px;
-	background-color:#0f0;
+	/*background-color:#0f0;*/
 	position:relative;
+
 }
 .fourthADList .fourthADListC{
   
@@ -849,6 +862,23 @@ h4{
 .fourthADListC a{
    text-decoration:none;
    color:#000;
+}
+.fourthADLeft{
+	width:27px;
+	height:56px;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -28px;
+    position:absolute;
+	top:140px;
+	left:0px;
+}
+.fourthADRight{
+	width:27px;
+	height:56px;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -28px -28px;
+	position:absolute;
+	top:140px;
+	right:0px;
+	
 }
 .fourthADList p{
 	font-size:15px;
@@ -879,6 +909,6 @@ h4{
 	cursor:pointer;
 }
 .ADActive{
-	background-color:#f00;
+	
 }
 /*第四部分优惠推荐end*/
