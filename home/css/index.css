@@ -912,3 +912,67 @@ h4{
 	
 }
 /*第四部分优惠推荐end*/
+/*一楼白酒馆start*/
+.whiteWine{
+	margin:0 auto;
+	width:1200px;
+	height:700px;
+	/*background-color:#f00;*/
+}
+.whiteWineTail{
+	height:40px;
+	/*background-color:#0f0*/;
+}
+.whiteWineTailLeft{
+	float:left;
+	margin-right:751px;
+	line-height:40px;
+	vertical-align:middle;
+
+}
+.whiteWineTailLeft .wWicon{
+	display:inline-block;
+    height:29px;
+    width:28px;
+    line-height:29px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right:5px;
+    color:#fff;
+    font-size:18px;
+    font-family:Arial;
+    font-style:normal;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -95px;
+}
+.whiteWineTailRight li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	font-size:12px;
+	padding-left:7px;
+	line-height:40px;
+	vertical-align:middle;
+}
+
+
+.whiteWineTailRight li:last-child{
+	background-color:#d43d4e;
+	color:#fff;
+	padding:0px;
+	display:inline-block;
+	width:52px;
+	height:16px;
+	line-height:16px;
+    margin-top:12px;
+	text-align:center;
+}
+.whiteWineTailRight a{
+		text-decoration:none;
+		color:#999;
+}
+.whiteWineTailRight li:last-child a{
+		
+		color:#fff;
+}
+
+/*一楼白酒馆end*/
