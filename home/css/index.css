@@ -974,5 +974,7 @@ h4{
 		
 		color:#fff;
 }
-
+.whiteWineTailRight a:hover{
+		text-decoration:underline;
+		color:#f00;
 /*一楼白酒馆end*/
