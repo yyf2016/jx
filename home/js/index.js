@@ -278,5 +278,70 @@ $(".fourthADRight").click(function(){
 })
 // 优惠右箭头指示灯end
 // 优惠促销跑马灯end
+// whitewine中部跑马灯start
+    widthWw=$(".picWarpWw img:first").width();
+	heightWw=$(".picWarpWw img:first").height();
+	sizeWw=$(".picWarpWw img").length; 
+	
+	totalWidthWw=widthWw*sizeWw;
+	$(".picButtonWw a:first").addClass("activeWw");
+	$(".mainWw .picWarpWw").css({"width":totalWidthWw+"px"});
+	$(".mainWw").css({"width":widthWw+"px","height":heightWw+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchWw=function(){
+		playWw=setInterval(function(){
+			$activeWw=$(".picButtonWw a.activeWw").next();
+			// console.log($active.attr("rel"));
+			if(Number($activeWw.attr("rel"))===sizeWw-1){
+				$(".picButtonWw a").removeClass("activeWw");
+			    $(".picButtonWw a:first").addClass("activeWw");
+                numberWw=$activeWw.attr("rel");
+			   $(".picWarpWw").animate({left:-widthWw*numberWw+"px"},500,function(){
+			   	$(".picWarpWw").css({"left":"0"});
+			   });
+			    $activeWw=$(".picButtonWw a:first");
+				numberWw=$activeWw.attr("rel");
+				 $(".picWarpWw").animate({left:-widthWw*numberWw+"px"},500);
+			}else{
+					numberWw=$activeWw.attr("rel");
+					 $(".picWarpWw").animate({left:-widthWw*numberWw+"px"},500);
+					$(".picButtonWw a").removeClass("activeWw");
+           			$activeWw.addClass("activeWw");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonWw a").click(function(){
+    	clearInterval(playFb);
+    	$activeWw=$(this);
+    	numberWw=$activeWw.attr("rel");
+    	 $(".picWarpWw").animate({left:-widthWw*numberWw+"px"},500);
+
+    	setTimeout("rotateSwitchWw()",1000);
+    	return false;
+    });
+    $(".picWarpWw a").hover(
+    	function(){
+    		clearInterval(playWw);
+    	},
+    	function(){
+    		rotateSwitchWw();
+    	})
+	rotateSwitchWw();
+
+// whitewine中部跑马灯end
 }
 )

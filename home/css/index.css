@@ -919,6 +919,7 @@ h4{
 	height:700px;
 	/*background-color:#f00;*/
 }
+/*白酒馆头部start*/
 .whiteWineTail{
 	height:40px;
 	/*background-color:#0f0*/;
@@ -977,4 +978,71 @@ h4{
 .whiteWineTailRight a:hover{
 		text-decoration:underline;
 		color:#f00;
+}
+/*白酒馆头部end		*/
+/*白酒馆主体start*/
+.whiteWineBody{
+	width:1200px;
+	height:488px;
+	background-color:#ccc;
+}
+/*白酒馆中部左边start*/
+.whiteWineBodyLeft{
+	width:210px;
+	height:485px;
+	background-color:#eee;
+	float:left;
+}
+/*白酒馆中部左边跑马灯start*/
+.mainWw{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpWw{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainWw img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainWw a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activeWw{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonWw{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonWw .hideWw{
+	display:none;
+}
+/*白酒馆中部左边跑马灯end*/
+
+/*白酒馆中部左边end*/
+.whiteWineBodyRight{
+	width:988px;
+	height:485px;
+	background-color:#0f0;
+	float:left;
+}
+
+/*白酒馆主体end*/
 /*一楼白酒馆end*/
