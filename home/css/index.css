@@ -983,17 +983,23 @@ h4{
 /*白酒馆主体start*/
 .whiteWineBody{
 	width:1200px;
-	height:488px;
-	background-color:#ccc;
+	height:485px;
+	/*background-color:#ccc;*/
+	border-top:2px solid #c94b56;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 /*白酒馆中部左边start*/
 .whiteWineBodyLeft{
 	width:210px;
 	height:485px;
-	background-color:#eee;
+	/*background-color:#eee;*/
 	float:left;
+
 }
 /*白酒馆中部左边跑马灯start*/
+
 .mainWw{
 	position:relative;
 	margin:0 auto;
@@ -1037,12 +1043,65 @@ h4{
 /*白酒馆中部左边跑马灯end*/
 
 /*白酒馆中部左边end*/
+/*白酒馆中部右边end*/
+
 .whiteWineBodyRight{
 	width:988px;
 	height:485px;
-	background-color:#0f0;
+	/*background-color:#0f0;*/
 	float:left;
 }
 
+.whiteWineBodyRight li{
+	float:left;
+	list-style:none;
+	width:196px;
+	height:232px;
+	border-left:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding-top:10px;
+
+
+}
+.whiteWineBodyRight li img{
+	display:block;
+}
+
+.whiteWineBodyRight a{
+	color:#000;
+	text-decoration:none;
+}
+.whiteWineBodyRight a:hover{
+	color:rgb(205,1,0);
+	text-decoration:underline;
+}
+
+.whiteWineBodyRight li div:last-child{
+	color:rgb(205,1,0);
+}
+.whiteWineBodyRight .club{
+	display:inline-block;
+	width:40px;
+	height:14px;
+	background:url(../imgs/clubIcon.png)
+}
+.whiteWineBodyRight li div:first-child{
+	position:relative;
+}
+.whiteWineBodyRight .wwSpan{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png)
+}
+.whiteWineBodyRight .wwSpan p{
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	}
+
+/*白酒馆中部右边end*/
 /*白酒馆主体end*/
 /*一楼白酒馆end*/
