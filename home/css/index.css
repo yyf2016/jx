@@ -1104,4 +1104,49 @@ h4{
 
 /*白酒馆中部右边end*/
 /*白酒馆主体end*/
+/*白酒馆下部start*/
+.whiteWineBottom{
+	height:200px;
+	border-left: 1px solid #0f0;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*白酒馆下部左边start*/
+.whiteWineBottomLeft{
+	float:left;
+	width:211px;
+	/*background-color:#f00;*/
+
+}
+.whiteWineBottomLeft li{
+	list-style:none;
+	margin-top:20px;
+}
+.whiteWineBottomLeft li i{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#d02229;
+	vertical-align:middle;
+	margin:5px;
+
+}
+.whiteWineBottomLeft li span{
+	font-size:14px;
+	color:#c00;
+	font-weight:bold;
+	padding:5px;
+}
+
+.whiteWineBottomLeft li a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+	padding-left:15px;
+
+}
+/*白酒馆下部左边end*/
+/*白酒馆下部右边start*/
+/*白酒馆下部右边end*/
+/*白酒馆下部end*/
 /*一楼白酒馆end*/
