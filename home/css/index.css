@@ -1070,6 +1070,7 @@ h4{
 .whiteWineBodyRight a{
 	color:#000;
 	text-decoration:none;
+	font-size:12px;
 }
 .whiteWineBodyRight a:hover{
 	color:rgb(205,1,0);
@@ -1108,6 +1109,7 @@ h4{
 .whiteWineBottom{
 	/*height:200px;*/
 	/*background-color:#0f0;*/
+	height:160px;
 	border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
@@ -1148,11 +1150,17 @@ h4{
 }
 /*白酒馆下部左边end*/
 /*白酒馆下部右边start*/
+.whiteWineBottomRight{
+	float:left;
+	width:985px;
+	height:162px;
+}
+
 .whiteWineBottomRightTop{
 	line-height:32px;
 }
 .whiteWineBottomRightTop-left{
- float:left;
+    float:left;
 }
 .whiteWineBottomRightTop-left i{
     display:inline-block;
@@ -1180,6 +1188,50 @@ h4{
 .whiteWineBottomRightTop-right span{
 	font-size:12px;
 	color:#ccc;
+}
+.whiteWineBottomRightBottom{
+	float:left;
+	height:127px;
+}
+.whiteWineBottomRightBottom li{
+	float:left;
+	height:100px;
+	width:197px;
+	height:90px;
+	list-style:none;
+}
+.wwImgWarp{
+    float:left;
+    padding-left:20px;
+}
+.wwImg{
+	float:left;
+}
+.wwImg img{
+	width:90px;
+	height:90px;
+	display:block;
+}
+.wwP{
+	float:left;
+	font-size:12px;
+	width:80px;
+	line-height:18px;
+	padding-top:5px;
+	/*white-space:nowrap;*/
+}
+.wwP a{
+	text-decoration:none;
+	color:#666;
+}
+.wwP a:hover{
+	text-decoration:underline;
+	color:#cc0001;
+}
+.wwPPrice{
+	font-size:15px;
+	color:#CD0100;
+	margin-top:10px;
 }
 /*白酒馆下部右边end*/
 /*白酒馆下部end*/
