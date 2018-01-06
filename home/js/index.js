@@ -343,6 +343,10 @@ $(".fourthADRight").click(function(){
 	rotateSwitchWw();
 
 // whitewine中部跑马灯end
+$(".whiteWineBottomRightTop-right a").hover(function(){
+   $(this).css({"color":"#cc0001","text-decoration":"underline"});
+   $(".whiteWineBottomRightTop-right a").not(this).css({"color":"#666","text-decoration":"none"});
+});
 // 白酒馆底部js特效start
 $(".whiteWineBottomRightTop-right a").hover(function(){
 	refNum=$(".whiteWineBottomRightTop-right a").index(this);
