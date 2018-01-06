@@ -343,5 +343,12 @@ $(".fourthADRight").click(function(){
 	rotateSwitchWw();
 
 // whitewine中部跑马灯end
+// 白酒馆底部js特效start
+$(".whiteWineBottomRightTop-right a").hover(function(){
+	refNum=$(".whiteWineBottomRightTop-right a").index(this);
+	$(".whiteWineBottomRightBottom").eq(refNum).show();
+	$(".whiteWineBottomRightBottom").not($(".whiteWineBottomRightBottom").eq(refNum)).hide();
+});
+// 白酒馆底部js特效end
 }
 )

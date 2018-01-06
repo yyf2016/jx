@@ -1185,13 +1185,27 @@ h4{
    font-size:12px;
    padding:0 5px;
 }
+
+.whiteWineBottomRightTop-right a:hover{
+   text-decoration:underline;
+   color:#cc0001;
+   
+}
 .whiteWineBottomRightTop-right span{
 	font-size:12px;
 	color:#ccc;
 }
+
+
 .whiteWineBottomRightBottom{
 	float:left;
 	height:127px;
+	display:none;
+}
+.first{
+	display:block;
+	/*background-color:#f00;*/
+	
 }
 .whiteWineBottomRightBottom li{
 	float:left;
@@ -1199,6 +1213,7 @@ h4{
 	width:197px;
 	height:90px;
 	list-style:none;
+	padding-top:18px;
 }
 .wwImgWarp{
     float:left;
