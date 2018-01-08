@@ -1251,3 +1251,1333 @@ h4{
 /*白酒馆下部右边end*/
 /*白酒馆下部end*/
 /*一楼白酒馆end*/
+/*二楼红酒馆start*/
+.redWine{
+	margin:0 auto;
+	width:1200px;
+	height:700px;
+	/*background-color:#f00;*/
+}
+/*红酒馆头部start*/
+.redWineTail{
+	height:40px;
+	/*background-color:#0f0*/;
+}
+.redWineTailLeft{
+	float:left;
+	margin-right:705px;
+	line-height:40px;
+	vertical-align:middle;
+
+}
+.redWineTailLeft .rWicon{
+	display:inline-block;
+    height:29px;
+    width:28px;
+    line-height:29px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right:5px;
+    color:#fff;
+    font-size:18px;
+    font-family:Arial;
+    font-style:normal;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -95px;
+}
+.redWineTailRight li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	font-size:12px;
+	padding-left:7px;
+	line-height:40px;
+	vertical-align:middle;
+}
+
+
+.redWineTailRight li:last-child{
+	background-color:#d43d4e;
+	color:#fff;
+	padding:0px;
+	display:inline-block;
+	width:52px;
+	height:16px;
+	line-height:16px;
+    margin-top:12px;
+	text-align:center;
+}
+.redWineTailRight a{
+		text-decoration:none;
+		color:#999;
+}
+.redWineTailRight li:last-child a{
+		
+		color:#fff;
+}
+.redWineTailRight a:hover{
+		text-decoration:underline;
+		color:#f00;
+}
+/*红酒馆头部end		*/
+/*红酒馆主体start*/
+.redWineBody{
+	width:1198px;
+	height:485px;
+	/*background-color:#00c;*/
+	border-top:2px solid #c94b56;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*红酒馆中部左边start*/
+.redWineBodyLeft{
+	width:210px;
+	height:485px;
+	/*background-color:#eee;*/
+	float:left;
+
+}
+/*红酒馆中部左边跑马灯start*/
+
+.mainrW{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarprW{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainrW img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainrW a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activerW{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonrW{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonrW .hiderW{
+	display:none;
+}
+/*红酒馆中部左边跑马灯end*/
+
+/*红酒馆中部左边end*/
+/*红酒馆中部右边end*/
+
+.redWineBodyRight{
+	width:988px;
+	height:485px;
+	/*background-color:#0f0;*/
+	float:left;
+}
+
+.redWineBodyRight li{
+	float:left;
+	list-style:none;
+	width:196px;
+	height:232px;
+	border-left:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding-top:10px;
+
+
+}
+.redWineBodyRight li img{
+	display:block;
+}
+
+.redWineBodyRight a{
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+}
+.redWineBodyRight a:hover{
+	color:rgb(205,1,0);
+	text-decoration:underline;
+}
+
+.redWineBodyRight li div:last-child{
+	color:rgb(205,1,0);
+}
+.redWineBodyRight .club{
+	display:inline-block;
+	width:40px;
+	height:14px;
+	background:url(../imgs/clubIcon.png)
+}
+.redWineBodyRight li div:first-child{
+	position:relative;
+}
+.redWineBodyRight .rWSpan{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png)
+}
+.redWineBodyRight .rWSpan p{
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	}
+
+/*红酒馆中部右边end*/
+/*红酒馆主体end*/
+/*红酒馆下部start*/
+.redWineBottom{
+	/*height:200px;*/
+	/*background-color:#0f0;*/
+	height:160px;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*红酒馆下部左边start*/
+.redWineBottomLeft{
+	float:left;
+	width:211px;
+	/*background-color:#f00;*/
+
+}
+.redWineBottomLeft li{
+	list-style:none;			
+	padding-top:20px;
+}
+.redWineBottomLeft li i{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#d02229;
+	vertical-align:middle;
+	margin:5px;
+
+}
+.redWineBottomLeft li span{
+	font-size:14px;
+	color:#c00;
+	font-weight:bold;
+	padding:5px;
+}
+
+.redWineBottomLeft li a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+	padding-left:15px;
+
+}
+/*红酒馆下部左边end*/
+/*红酒馆下部右边start*/
+.redWineBottomRight{
+	float:left;
+	width:985px;
+	height:162px;
+}
+
+.redWineBottomRightTop{
+	line-height:32px;
+}
+.redWineBottomRightTop-left{
+    float:left;
+}
+.redWineBottomRightTop-left i{
+    display:inline-block;
+    width:11px;
+    height:13px;
+    margin:5px;
+    vertical-align:middle;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat -38px 0px;
+	}
+.redWineBottomRightTop-left span{
+	color:#d43d4e;
+	font-size:12px;
+	font-weight:bold;
+}
+.redWineBottomRightTop-right{
+	float:right;
+}
+
+.redWineBottomRightTop-right a{
+   text-decoration:none;
+   color:#666;
+   font-size:12px;
+   padding:0 5px;
+}
+
+/*.redWineBottomRightTop-right a:hover{
+   text-decoration:underline;
+   color:#cc0001;
+   
+}*/
+.redWineBottomRightTop-right span{
+	font-size:12px;
+	color:#ccc;
+}
+
+
+.redWineBottomRightBottom{
+	float:left;
+	height:127px;
+	display:none;
+}
+.first{
+	display:block;
+	/*background-color:#f00;*/
+	
+}
+.redWineBottomRightBottom li{
+	float:left;
+	height:100px;
+	width:197px;
+	height:90px;
+	list-style:none;
+	padding-top:18px;
+}
+.rWImgWarp{
+    float:left;
+    padding-left:20px;
+}
+.rWImg{
+	float:left;
+}
+.rWImg img{
+	width:90px;
+	height:90px;
+	display:block;
+}
+.rWP{
+	float:left;
+	font-size:12px;
+	width:80px;
+	line-height:18px;
+	padding-top:5px;
+	/*white-space:nowrap;*/
+}
+.rWP a{
+	text-decoration:none;
+	color:#666;
+}
+.rWP a:hover{
+	text-decoration:underline;
+	color:#cc0001;
+}
+.rWPPrice{
+	font-size:15px;
+	color:#CD0100;
+	margin-top:10px;
+}
+/*红酒馆下部右边end*/
+/*红酒馆下部end*/
+/*二楼红酒馆end*/
+/*三楼洋酒馆start*/
+.yangWine{
+	margin:0 auto;
+	width:1200px;
+	height:539px;
+	/*background-color:#f00;*/
+}
+/*洋酒馆头部start*/
+.yangWineTail{
+	height:40px;
+	/*background-color:#0f0*/;
+}
+.yangWineTailLeft{
+	float:left;
+	margin-right:679px;
+	line-height:40px;
+	vertical-align:middle;
+
+}
+.yangWineTailLeft .yWicon{
+	display:inline-block;
+    height:29px;
+    width:28px;
+    line-height:29px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right:5px;
+    color:#fff;
+    font-size:18px;
+    font-family:Arial;
+    font-style:normal;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -95px;
+}
+.yangWineTailRight li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	font-size:12px;
+	padding-left:7px;
+	line-height:40px;
+	vertical-align:middle;
+}
+
+
+.yangWineTailRight li:last-child{
+	background-color:#d43d4e;
+	color:#fff;
+	padding:0px;
+	display:inline-block;
+	width:52px;
+	height:16px;
+	line-height:16px;
+    margin-top:12px;
+	text-align:center;
+}
+.yangWineTailRight a{
+		text-decoration:none;
+		color:#999;
+}
+.yangWineTailRight li:last-child a{
+		
+		color:#fff;
+}
+.yangWineTailRight a:hover{
+		text-decoration:underline;
+		color:#f00;
+}
+/*洋酒馆头部end		*/
+/*洋酒馆主体start*/
+.yangWineBody{
+	width:1198px;
+	height:485px;
+	/*background-color:#00c;*/
+	border-top:2px solid #c94b56;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*洋酒馆中部左边start*/
+.yangWineBodyLeft{
+	width:210px;
+	height:485px;
+	/*background-color:#eee;*/
+	float:left;
+
+}
+/*洋酒馆中部左边跑马灯start*/
+
+.mainyW{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpyW{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainyW img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainyW a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activeyW{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonyW{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonyW .hideyW{
+	display:none;
+}
+/*洋酒馆中部左边跑马灯end*/
+
+/*洋酒馆中部左边end*/
+/*洋酒馆中部右边end*/
+
+.yangWineBodyRight{
+	width:988px;
+	height:485px;
+	/*background-color:#0f0;*/
+	float:left;
+}
+
+.yangWineBodyRight li{
+	float:left;
+	list-style:none;
+	width:196px;
+	height:232px;
+	border-left:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding-top:10px;
+
+
+}
+.yangWineBodyRight li img{
+	display:block;
+}
+
+.yangWineBodyRight a{
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+}
+.yangWineBodyRight a:hover{
+	color:rgb(205,1,0);
+	text-decoration:underline;
+}
+
+.yangWineBodyRight li div:last-child{
+	color:rgb(205,1,0);
+}
+.yangWineBodyRight .club{
+	display:inline-block;
+	width:40px;
+	height:14px;
+	background:url(../imgs/clubIcon.png)
+}
+.yangWineBodyRight li div:first-child{
+	position:relative;
+}
+.yangWineBodyRight .yWSpan{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png)
+}
+.yangWineBodyRight .yWSpan p{
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	}
+
+/*洋酒馆中部右边end*/
+/*洋酒馆主体end*/
+/*洋酒馆下部start*/
+.yangWineBottom{
+	/*height:200px;*/
+	/*background-color:#0f0;*/
+	height:160px;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*洋酒馆下部左边start*/
+.yangWineBottomLeft{
+	float:left;
+	width:211px;
+	/*background-color:#f00;*/
+
+}
+.yangWineBottomLeft li{
+	list-style:none;			
+	padding-top:10px;
+}
+.yangWineBottomLeft li i{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#d02229;
+	vertical-align:middle;
+	margin:5px;
+
+}
+.yangWineBottomLeft li span{
+	font-size:14px;
+	color:#c00;
+	font-weight:bold;
+	padding:5px;
+}
+
+.yangWineBottomLeft li a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+	padding-left:15px;
+
+}
+/*洋酒馆下部左边end*/
+/*洋酒馆下部右边start*/
+.yangWineBottomRight{
+	float:left;
+	width:985px;
+	height:162px;
+}
+
+.yangWineBottomRightTop{
+	line-height:32px;
+}
+.yangWineBottomRightTop-left{
+    float:left;
+}
+.yangWineBottomRightTop-left i{
+    display:inline-block;
+    width:11px;
+    height:13px;
+    margin:5px;
+    vertical-align:middle;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat -38px 0px;
+	}
+.yangWineBottomRightTop-left span{
+	color:#d43d4e;
+	font-size:12px;
+	font-weight:bold;
+}
+.yangWineBottomRightTop-right{
+	float:right;
+}
+
+.yangWineBottomRightTop-right a{
+   text-decoration:none;
+   color:#666;
+   font-size:12px;
+   padding:0 5px;
+}
+
+/*.yangWineBottomRightTop-right a:hover{
+   text-decoration:underline;
+   color:#cc0001;
+   
+}*/
+.yangWineBottomRightTop-right span{
+	font-size:12px;
+	color:#ccc;
+}
+
+
+.yangWineBottomRightBottom{
+	float:left;
+	height:127px;
+	display:none;
+}
+.first{
+	display:block;
+	/*background-color:#f00;*/
+	
+}
+.yangWineBottomRightBottom li{
+	float:left;
+	height:100px;
+	width:197px;
+	height:90px;
+	list-style:none;
+	padding-top:18px;
+}
+.yWImgWarp{
+    float:left;
+    padding-left:20px;
+}
+.yWImg{
+	float:left;
+}
+.yWImg img{
+	width:90px;
+	height:90px;
+	display:block;
+}
+.yWP{
+	float:left;
+	font-size:12px;
+	width:80px;
+	line-height:18px;
+	padding-top:5px;
+	/*white-space:nowrap;*/
+}
+.yWP a{
+	text-decoration:none;
+	color:#666;
+}
+.yWP a:hover{
+	text-decoration:underline;
+	color:#cc0001;
+}
+.yWPPrice{
+	font-size:15px;
+	color:#CD0100;
+	margin-top:10px;
+}
+/*洋酒馆下部右边end*/
+/*洋酒馆下部end*/
+/*三楼洋酒馆end*/
+/*四楼养生酒馆start*/
+.yangShengWine{
+	margin:0 auto;
+	width:1200px;
+	height:539px;
+	/*background-color:#f00;*/
+}
+/*养生酒馆头部start*/
+.yangShengWineTail{
+	height:40px;
+	/*background-color:#0f0*/;
+}
+.yangShengWineTailLeft{
+	float:left;
+	margin-right:587px;
+	line-height:40px;
+	vertical-align:middle;
+
+}
+.yangShengWineTailLeft .ySWineicon{
+	display:inline-block;
+    height:29px;
+    width:28px;
+    line-height:29px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right:5px;
+    color:#fff;
+    font-size:18px;
+    font-family:Arial;
+    font-style:normal;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -95px;
+}
+.yangShengWineTailRight li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	font-size:12px;
+	padding-left:7px;
+	line-height:40px;
+	vertical-align:middle;
+}
+
+
+
+.yangShengWineTailRight a{
+		text-decoration:none;
+		color:#999;
+}
+
+.yangShengWineTailRight a:hover{
+		text-decoration:underline;
+		color:#f00;
+}
+/*养生酒馆头部end		*/
+/*养生酒馆主体start*/
+.yangShengWineBody{
+	width:1198px;
+	height:485px;
+	/*background-color:#00c;*/
+	border-top:2px solid #c94b56;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*养生酒馆中部左边start*/
+.yangShengWineBodyLeft{
+	width:210px;
+	height:485px;
+	/*background-color:#eee;*/
+	float:left;
+
+}
+/*养生酒馆中部左边跑马灯start*/
+
+.mainySWine{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpySWine{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainySWine img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainySWine a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activeySWine{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonySWine{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonySWine .hideySWine{
+	display:none;
+}
+/*养生酒馆中部左边跑马灯end*/
+
+/*养生酒馆中部左边end*/
+/*养生酒馆中部右边end*/
+
+.yangShengWineBodyRight{
+	width:988px;
+	height:485px;
+	/*background-color:#0f0;*/
+	float:left;
+}
+
+.yangShengWineBodyRight li{
+	float:left;
+	list-style:none;
+	width:196px;
+	height:232px;
+	border-left:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding-top:10px;
+
+
+}
+.yangShengWineBodyRight li img{
+	display:block;
+}
+
+.yangShengWineBodyRight a{
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+}
+.yangShengWineBodyRight a:hover{
+	color:rgb(205,1,0);
+	text-decoration:underline;
+}
+
+.yangShengWineBodyRight li div:last-child{
+	color:rgb(205,1,0);
+}
+.yangShengWineBodyRight .club{
+	display:inline-block;
+	width:40px;
+	height:14px;
+	background:url(../imgs/clubIcon.png)
+}
+.yangShengWineBodyRight li div:first-child{
+	position:relative;
+}
+.yangShengWineBodyRight .ySWineSpan{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png)
+}
+.yangShengWineBodyRight .ySWineSpan p{
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	}
+
+/*养生酒馆中部右边end*/
+/*养生酒馆主体end*/
+/*养生酒馆下部start*/
+.yangShengWineBottom{
+	/*height:200px;*/
+	/*background-color:#0f0;*/
+	height:160px;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*养生酒馆下部左边start*/
+.yangShengWineBottomLeft{
+	float:left;
+	width:211px;
+	/*background-color:#f00;*/
+
+}
+.yangShengWineBottomLeft li{
+	list-style:none;			
+	padding-top:20px;
+}
+.yangShengWineBottomLeft li i{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#d02229;
+	vertical-align:middle;
+	margin:5px;
+
+}
+.yangShengWineBottomLeft li span{
+	font-size:14px;
+	color:#c00;
+	font-weight:bold;
+	padding:5px;
+}
+
+.yangShengWineBottomLeft li a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+	padding-left:15px;
+
+}
+/*养生酒馆下部左边end*/
+/*养生酒馆下部右边start*/
+.yangShengWineBottomRight{
+	float:left;
+	width:985px;
+	height:162px;
+}
+
+.yangShengWineBottomRightTop{
+	line-height:32px;
+}
+.yangShengWineBottomRightTop-left{
+    float:left;
+}
+.yangShengWineBottomRightTop-left i{
+    display:inline-block;
+    width:11px;
+    height:13px;
+    margin:5px;
+    vertical-align:middle;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat -38px 0px;
+	}
+.yangShengWineBottomRightTop-left span{
+	color:#d43d4e;
+	font-size:12px;
+	font-weight:bold;
+}
+.yangShengWineBottomRightTop-right{
+	float:right;
+}
+
+.yangShengWineBottomRightTop-right a{
+   text-decoration:none;
+   color:#666;
+   font-size:12px;
+   padding:0 5px;
+}
+
+/*.yangShengWineBottomRightTop-right a:hover{
+   text-decoration:underline;
+   color:#cc0001;
+   
+}*/
+.yangShengWineBottomRightTop-right span{
+	font-size:12px;
+	color:#ccc;
+}
+
+
+.yangShengWineBottomRightBottom{
+	float:left;
+	height:127px;
+	display:none;
+}
+.first{
+	display:block;
+	/*background-color:#f00;*/
+	
+}
+.yangShengWineBottomRightBottom li{
+	float:left;
+	height:100px;
+	width:197px;
+	height:90px;
+	list-style:none;
+	padding-top:18px;
+}
+.ySWineImgWarp{
+    float:left;
+    padding-left:20px;
+}
+.ySWineImg{
+	float:left;
+}
+.ySWineImg img{
+	width:90px;
+	height:90px;
+	display:block;
+}
+.ySWineP{
+	float:left;
+	font-size:12px;
+	width:80px;
+	line-height:18px;
+	padding-top:5px;
+	/*white-space:nowrap;*/
+}
+.ySWineP a{
+	text-decoration:none;
+	color:#666;
+}
+.ySWineP a:hover{
+	text-decoration:underline;
+	color:#cc0001;
+}
+.ySWinePPrice{
+	font-size:15px;
+	color:#CD0100;
+	margin-top:10px;
+}
+/*养生酒馆下部右边end*/
+/*养生酒馆下部end*/
+/*四楼养生酒馆end*/
+/*五楼养生酒馆start*/
+.food{
+	margin:0 auto;
+	width:1200px;
+	height:539px;
+	/*background-color:#f00;*/
+}
+/*养生酒馆头部start*/
+.foodTail{
+	height:40px;
+	/*background-color:#0f0*/;
+}
+.foodTailLeft{
+	float:left;
+	margin-right:916px;
+	line-height:40px;
+	vertical-align:middle;
+
+}
+.foodTailLeft .foodicon{
+	display:inline-block;
+    height:29px;
+    width:28px;
+    line-height:29px;
+    vertical-align:middle;
+    text-align:center;
+    margin-right:5px;
+    color:#fff;
+    font-size:18px;
+    font-family:Arial;
+    font-style:normal;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat 0px -95px;
+}
+.foodTailRight li{
+	display:inline-block;
+	float:left;
+	list-style:none;
+	font-size:12px;
+	padding-left:7px;
+	line-height:40px;
+	vertical-align:middle;
+}
+
+
+
+.foodTailRight a{
+		text-decoration:none;
+		color:#999;
+}
+
+.foodTailRight a:hover{
+		text-decoration:underline;
+		color:#f00;
+}
+/*养生酒馆头部end		*/
+/*养生酒馆主体start*/
+.foodBody{
+	width:1198px;
+	height:485px;
+	/*background-color:#00c;*/
+	border-top:2px solid #c94b56;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*养生酒馆中部左边start*/
+.foodBodyLeft{
+	width:210px;
+	height:485px;
+	/*background-color:#eee;*/
+	float:left;
+
+}
+/*养生酒馆中部左边跑马灯start*/
+
+.mainfood{
+	position:relative;
+	margin:0 auto;
+	/*background:#ccc;*/
+	/*outline:3px solid #0ff;*/
+	/*height:100px;
+	width:200px;*/
+	overflow:hidden;
+}
+.picWarpfood{
+	position:absolute;
+	/*height:100px;
+	width:600px;*/
+}
+
+.mainfood img{
+	float:left;
+	/*height:100px;
+	width:200px;*/
+}
+.mainfood a{
+	text-decoration:none;
+	color:#000;
+   /* padding:5px;*/
+
+}
+.activefood{
+	background:#f00;
+	color:#fff;
+
+}
+
+.picButtonfood{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+.picButtonfood .hidefood{
+	display:none;
+}
+/*养生酒馆中部左边跑马灯end*/
+
+/*养生酒馆中部左边end*/
+/*养生酒馆中部右边end*/
+
+.foodBodyRight{
+	width:988px;
+	height:485px;
+	/*background-color:#0f0;*/
+	float:left;
+}
+
+.foodBodyRight li{
+	float:left;
+	list-style:none;
+	width:196px;
+	height:232px;
+	border-left:1px solid #ececec;
+	border-bottom:1px solid #ececec;
+	padding-top:10px;
+
+
+}
+.foodBodyRight li img{
+	display:block;
+}
+
+.foodBodyRight a{
+	color:#000;
+	text-decoration:none;
+	font-size:12px;
+}
+.foodBodyRight a:hover{
+	color:rgb(205,1,0);
+	text-decoration:underline;
+}
+
+.foodBodyRight li div:last-child{
+	color:rgb(205,1,0);
+}
+.foodBodyRight .club{
+	display:inline-block;
+	width:40px;
+	height:14px;
+	background:url(../imgs/clubIcon.png)
+}
+.foodBodyRight li div:first-child{
+	position:relative;
+}
+.foodBodyRight .foodSpan{
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:45px;
+	height:55px;
+	background:url(../imgs/TagBg.png)
+}
+.foodBodyRight .foodSpan p{
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	}
+
+/*养生酒馆中部右边end*/
+/*养生酒馆主体end*/
+/*养生酒馆下部start*/
+.foodBottom{
+	/*height:200px;*/
+	/*background-color:#0f0;*/
+	height:160px;
+	border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+/*养生酒馆下部左边start*/
+.foodBottomLeft{
+	float:left;
+	width:211px;
+	/*background-color:#f00;*/
+
+}
+.foodBottomLeft li{
+	list-style:none;			
+	padding-top:20px;
+}
+.foodBottomLeft li i{
+	display:inline-block;
+	width:3px;
+	height:3px;
+	background-color:#d02229;
+	vertical-align:middle;
+	margin:5px;
+
+}
+.foodBottomLeft li span{
+	font-size:14px;
+	color:#c00;
+	font-weight:bold;
+	padding:5px;
+}
+
+.foodBottomLeft li a{
+	text-decoration:none;
+	color:#666;
+	font-size:12px;
+	padding-left:15px;
+
+}
+/*养生酒馆下部左边end*/
+/*养生酒馆下部右边start*/
+.foodBottomRight{
+	float:left;
+	width:985px;
+	height:162px;
+}
+
+.foodBottomRightTop{
+	line-height:32px;
+}
+.foodBottomRightTop-left{
+    float:left;
+}
+.foodBottomRightTop-left i{
+    display:inline-block;
+    width:11px;
+    height:13px;
+    margin:5px;
+    vertical-align:middle;
+    background:url(../imgs/newIndexIcon-24.png) no-repeat -38px 0px;
+	}
+.foodBottomRightTop-left span{
+	color:#d43d4e;
+	font-size:12px;
+	font-weight:bold;
+}
+.foodBottomRightTop-right{
+	float:right;
+}
+
+.foodBottomRightTop-right a{
+   text-decoration:none;
+   color:#666;
+   font-size:12px;
+   padding:0 5px;
+}
+
+/*.foodBottomRightTop-right a:hover{
+   text-decoration:underline;
+   color:#cc0001;
+   
+}*/
+.foodBottomRightTop-right span{
+	font-size:12px;
+	color:#ccc;
+}
+
+
+.foodBottomRightBottom{
+	float:left;
+	height:127px;
+	display:none;
+}
+.first{
+	display:block;
+	/*background-color:#f00;*/
+	
+}
+.foodBottomRightBottom li{
+	float:left;
+	height:100px;
+	width:197px;
+	height:90px;
+	list-style:none;
+	padding-top:18px;
+}
+.foodImgWarp{
+    float:left;
+    padding-left:20px;
+}
+.foodImg{
+	float:left;
+}
+.foodImg img{
+	width:90px;
+	height:90px;
+	display:block;
+}
+.foodP{
+	float:left;
+	font-size:12px;
+	width:80px;
+	line-height:18px;
+	padding-top:5px;
+	/*white-space:nowrap;*/
+}
+.foodP a{
+	text-decoration:none;
+	color:#666;
+}
+.foodP a:hover{
+	text-decoration:underline;
+	color:#cc0001;
+}
+.foodPPrice{
+	font-size:15px;
+	color:#CD0100;
+	margin-top:10px;
+}
+/*养生酒馆下部右边end*/
+/*养生酒馆下部end*/
+/*五楼养生酒馆end*/

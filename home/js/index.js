@@ -354,5 +354,299 @@ $(".whiteWineBottomRightTop-right a").hover(function(){
 	$(".whiteWineBottomRightBottom").not($(".whiteWineBottomRightBottom").eq(refNum)).hide();
 });
 // 白酒馆底部js特效end
+// 红酒中部跑马灯start
+    widthrW=$(".picWarprW img:first").width();
+	heightrW=$(".picWarprW img:first").height();
+	sizerW=$(".picWarprW img").length; 
+	
+	totalWidthrW=widthrW*sizerW;
+	$(".picButtonrW a:first").addClass("activerW");
+	$(".mainrW .picWarprW").css({"width":totalWidthrW+"px"});
+	$(".mainrW").css({"width":widthrW+"px","height":heightrW+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchrW=function(){
+		playrW=setInterval(function(){
+			$activerW=$(".picButtonrW a.activerW").next();
+			// console.log($active.attr("rel"));
+			if(Number($activerW.attr("rel"))===sizerW-1){
+				$(".picButtonrW a").removeClass("activerW");
+			    $(".picButtonrW a:first").addClass("activerW");
+                numberrW=$activerW.attr("rel");
+			   $(".picWarprW").animate({left:-widthrW*numberrW+"px"},500,function(){
+			   	$(".picWarprW").css({"left":"0"});
+			   });
+			    $activerW=$(".picButtonrW a:first");
+				numberrW=$activerW.attr("rel");
+				 $(".picWarprW").animate({left:-widthrW*numberrW+"px"},500);
+			}else{
+					numberrW=$activerW.attr("rel");
+					 $(".picWarprW").animate({left:-widthrW*numberrW+"px"},500);
+					$(".picButtonrW a").removeClass("activerW");
+           			$activerW.addClass("activerW");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonrW a").click(function(){
+    	clearInterval(playFb);
+    	$activerW=$(this);
+    	numberrW=$activerW.attr("rel");
+    	 $(".picWarprW").animate({left:-widthrW*numberrW+"px"},500);
+
+    	setTimeout("rotateSwitchrW()",1000);
+    	return false;
+    });
+    $(".picWarprW a").hover(
+    	function(){
+    		clearInterval(playrW);
+    	},
+    	function(){
+    		rotateSwitchrW();
+    	})
+	rotateSwitchrW();
+
+// redWine中部跑马灯end
+$(".redWineBottomRightTop-right a").hover(function(){
+   $(this).css({"color":"#cc0001","text-decoration":"underline"});
+   $(".redWineBottomRightTop-right a").not(this).css({"color":"#666","text-decoration":"none"});
+});
+// 白酒馆底部js特效start
+$(".redWineBottomRightTop-right a").hover(function(){
+	refNum=$(".redWineBottomRightTop-right a").index(this);
+	$(".redWineBottomRightBottom").eq(refNum).show();
+	$(".redWineBottomRightBottom").not($(".redWineBottomRightBottom").eq(refNum)).hide();
+});
+// 红酒馆底部js特效end
+// 洋酒中部跑马灯start
+    widthyW=$(".picWarpyW img:first").width();
+	heightyW=$(".picWarpyW img:first").height();
+	sizeyW=$(".picWarpyW img").length; 
+	
+	totalWidthyW=widthyW*sizeyW;
+	$(".picButtonyW a:first").addClass("activeyW");
+	$(".mainyW .picWarpyW").css({"width":totalWidthyW+"px"});
+	$(".mainyW").css({"width":widthyW+"px","height":heightyW+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchyW=function(){
+		playyW=setInterval(function(){
+			$activeyW=$(".picButtonyW a.activeyW").next();
+			// console.log($active.attr("rel"));
+			if(Number($activeyW.attr("rel"))===sizeyW-1){
+				$(".picButtonyW a").removeClass("activeyW");
+			    $(".picButtonyW a:first").addClass("activeyW");
+                numberyW=$activeyW.attr("rel");
+			   $(".picWarpyW").animate({left:-widthyW*numberyW+"px"},500,function(){
+			   	$(".picWarpyW").css({"left":"0"});
+			   });
+			    $activeyW=$(".picButtonyW a:first");
+				numberyW=$activeyW.attr("rel");
+				 $(".picWarpyW").animate({left:-widthyW*numberyW+"px"},500);
+			}else{
+					numberyW=$activeyW.attr("rel");
+					 $(".picWarpyW").animate({left:-widthyW*numberyW+"px"},500);
+					$(".picButtonyW a").removeClass("activeyW");
+           			$activeyW.addClass("activeyW");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonyW a").click(function(){
+    	clearInterval(playFb);
+    	$activeyW=$(this);
+    	numberyW=$activeyW.attr("rel");
+    	 $(".picWarpyW").animate({left:-widthyW*numberyW+"px"},500);
+
+    	setTimeout("rotateSwitchyW()",1000);
+    	return false;
+    });
+    $(".picWarpyW a").hover(
+    	function(){
+    		clearInterval(playyW);
+    	},
+    	function(){
+    		rotateSwitchyW();
+    	})
+	rotateSwitchyW();
+
+// yangWine中部跑马灯end
+$(".yangWineBottomRightTop-right a").hover(function(){
+   $(this).css({"color":"#cc0001","text-decoration":"underline"});
+   $(".yangWineBottomRightTop-right a").not(this).css({"color":"#666","text-decoration":"none"});
+});
+// 洋酒馆底部js特效start
+$(".yangWineBottomRightTop-right a").hover(function(){
+	refNum=$(".yangWineBottomRightTop-right a").index(this);
+	$(".yangWineBottomRightBottom").eq(refNum).show();
+	$(".yangWineBottomRightBottom").not($(".yangWineBottomRightBottom").eq(refNum)).hide();
+});
+// 洋酒馆底部js特效end
+// 养生酒中部跑马灯start
+    widthySWine=$(".picWarpySWine img:first").width();
+	heightySWine=$(".picWarpySWine img:first").height();
+	sizeySWine=$(".picWarpySWine img").length; 
+	
+	totalWidthySWine=widthySWine*sizeySWine;
+	$(".picButtonySWine a:first").addClass("activeySWine");
+	$(".mainySWine .picWarpySWine").css({"width":totalWidthySWine+"px"});
+	$(".mainySWine").css({"width":widthySWine+"px","height":heightySWine+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchySWine=function(){
+		playySWine=setInterval(function(){
+			$activeySWine=$(".picButtonySWine a.activeySWine").next();
+			// console.log($active.attr("rel"));
+			if(Number($activeySWine.attr("rel"))===sizeySWine-1){
+				$(".picButtonySWine a").removeClass("activeySWine");
+			    $(".picButtonySWine a:first").addClass("activeySWine");
+                numberySWine=$activeySWine.attr("rel");
+			   $(".picWarpySWine").animate({left:-widthySWine*numberySWine+"px"},500,function(){
+			   	$(".picWarpySWine").css({"left":"0"});
+			   });
+			    $activeySWine=$(".picButtonySWine a:first");
+				numberySWine=$activeySWine.attr("rel");
+				 $(".picWarpySWine").animate({left:-widthySWine*numberySWine+"px"},500);
+			}else{
+					numberySWine=$activeySWine.attr("rel");
+					 $(".picWarpySWine").animate({left:-widthySWine*numberySWine+"px"},500);
+					$(".picButtonySWine a").removeClass("activeySWine");
+           			$activeySWine.addClass("activeySWine");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonySWine a").click(function(){
+    	clearInterval(playFb);
+    	$activeySWine=$(this);
+    	numberySWine=$activeySWine.attr("rel");
+    	 $(".picWarpySWine").animate({left:-widthySWine*numberySWine+"px"},500);
+
+    	setTimeout("rotateSwitchySWine()",1000);
+    	return false;
+    });
+    $(".picWarpySWine a").hover(
+    	function(){
+    		clearInterval(playySWine);
+    	},
+    	function(){
+    		rotateSwitchySWine();
+    	})
+	rotateSwitchySWine();
+
+// yangShengWine中部跑马灯end
+$(".yangShengWineBottomRightTop-right a").hover(function(){
+   $(this).css({"color":"#cc0001","text-decoration":"underline"});
+   $(".yangShengWineBottomRightTop-right a").not(this).css({"color":"#666","text-decoration":"none"});
+});
+// 养生酒馆底部js特效start
+$(".yangShengWineBottomRightTop-right a").hover(function(){
+	refNum=$(".yangShengWineBottomRightTop-right a").index(this);
+	$(".yangShengWineBottomRightBottom").eq(refNum).show();
+	$(".yangShengWineBottomRightBottom").not($(".yangShengWineBottomRightBottom").eq(refNum)).hide();
+});
+// 养生酒馆底部js特效end
+// 食物中部跑马灯start
+    widthfood=$(".picWarpfood img:first").width();
+	heightfood=$(".picWarpfood img:first").height();
+	sizefood=$(".picWarpfood img").length; 
+	
+	totalWidthfood=widthfood*sizefood;
+	$(".picButtonfood a:first").addClass("activefood");
+	$(".mainfood .picWarpfood").css({"width":totalWidthfood+"px"});
+	$(".mainfood").css({"width":widthfood+"px","height":heightfood+"px"});
+	// rotate=function(){
+	// 	// $active=$("..picButtonFm a.active").next();
+	// 	// 	if($active.length===0)
+	// 	// 	{
+	// 	// 		$active=$("..picButtonFm a:first");
+	// 	// 	}
+	// 	// 	number=$active.attr("rel");
+	
+ //       $(".picWarpFm").animate({left:-width*number+"px"},500);
+ //       // $("..picButtonFm a").removeClass();
+ //       // $active.addClass("active");
+	// }
+	rotateSwitchfood=function(){
+		playfood=setInterval(function(){
+			$activefood=$(".picButtonfood a.activefood").next();
+			// console.log($active.attr("rel"));
+			if(Number($activefood.attr("rel"))===sizefood-1){
+				$(".picButtonfood a").removeClass("activefood");
+			    $(".picButtonfood a:first").addClass("activefood");
+                numberfood=$activefood.attr("rel");
+			   $(".picWarpfood").animate({left:-widthfood*numberfood+"px"},500,function(){
+			   	$(".picWarpfood").css({"left":"0"});
+			   });
+			    $activefood=$(".picButtonfood a:first");
+				numberfood=$activefood.attr("rel");
+				 $(".picWarpfood").animate({left:-widthfood*numberfood+"px"},500);
+			}else{
+					numberfood=$activefood.attr("rel");
+					 $(".picWarpfood").animate({left:-widthfood*numberfood+"px"},500);
+					$(".picButtonfood a").removeClass("activefood");
+           			$activefood.addClass("activefood");
+			 	};
+			 	
+			
+			
+		},1000);
+	};
+    $(".picButtonfood a").click(function(){
+    	clearInterval(playFb);
+    	$activefood=$(this);
+    	numberfood=$activefood.attr("rel");
+    	 $(".picWarpfood").animate({left:-widthfood*numberfood+"px"},500);
+
+    	setTimeout("rotateSwitchfood()",1000);
+    	return false;
+    });
+    $(".picWarpfood a").hover(
+    	function(){
+    		clearInterval(playfood);
+    	},
+    	function(){
+    		rotateSwitchfood();
+    	})
+	rotateSwitchfood();
+
+// food中部跑马灯end
+
 }
 )
