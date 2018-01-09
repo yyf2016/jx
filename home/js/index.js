@@ -656,9 +656,8 @@ $(".logoWallTail a").mouseleave(function(){
 });
 // 界面转化start
 $(".logoWallHeadLi").mouseover(function(){
-	numberLi=$(".logoWallHeadLi").index(this);
-	leftPx=numberLi*($(this).width()+0);
-	$(".slider").animate({"left":leftPx+"px"},170);
+	leftLi=$(this).position().left;
+	$(".slider").animate({"left":leftLi+"px"},100);
 	$(".logoWallHeadLi").not(this).css({"color":"#000"});
 	$(this).css({"color":"#dd102e"});
 	$(".logoWallTail").not($(this).find(".logoWallTail")).hide();
