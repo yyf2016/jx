@@ -2600,8 +2600,10 @@ h4{
 
 .logoWallHeadLi{
 	float:left;
-	margin:auto 15px;
-
+	width:100px;
+	text-align:center;
+	/*padding-left:15px;
+	padding-right:15px;*/
 	list-style:none;
 }
 .logoWallTail{
@@ -2625,9 +2627,6 @@ h4{
 	overflow:hidden;
 	background-color:#ccc;
 	list-style:none;
-
-
-
 }
 .logoWallTail li img{
 	/*display:block;*/
@@ -2639,13 +2638,13 @@ h4{
 .slider{
 	border-bottom: 2px solid #dd102e;
     height: 7px;
-    /*position: absolute;*/
+    position: absolute;
     left: 0;
-    width: 90px;
+    width: 100px;
     top: 36px;
     text-align: center;
     z-index: 1;
-   /* overflow: hidden;*/
+    overflow: hidden;
 }
 
 
@@ -2658,6 +2657,7 @@ h4{
     font-size: 0;
     height: 0;
     width: 0;
-    margin-top:-18px;
+    position:relative;
+    top:-17px;
 }
 /*logo墙end*/
