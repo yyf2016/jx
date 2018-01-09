@@ -647,6 +647,21 @@ $(".yangShengWineBottomRightTop-right a").hover(function(){
 	rotateSwitchfood();
 
 // food中部跑马灯end
-
+// logo墙start
+$(".logoWallTail a").mouseenter(function(){
+	$(this).find("img").animate({"margin-left":"-100px"},500);
+});
+$(".logoWallTail a").mouseleave(function(){
+	$(this).find("img").animate({"margin-left":"0px"},500);
+});
+// 界面转化start
+$(".logoWallHeadLi").mouseover(function(){
+	$(".logoWallHeadLi").not(this).css({"color":"#000"});
+	$(this).css({"color":"#dd102e"});
+	$(".logoWallTail").not($(this).find(".logoWallTail")).hide();
+	$(this).find(".logoWallTail").show();
+});
+// 界面转化end
+// logo墙end
 }
 )

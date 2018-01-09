@@ -2581,3 +2581,83 @@ h4{
 /*养生酒馆下部右边end*/
 /*养生酒馆下部end*/
 /*五楼养生酒馆end*/
+/*logo墙start*/
+.logoWall{
+	margin:0 auto;
+	width:1200px;
+	height:350px;
+	position:relative;
+	/*background-color:#f00;*/
+}
+.logoWallHead{
+	height:45px;
+	width:1200px;
+	vertical-align:middle;
+	line-height:45px;
+	background-color:#0f0;
+    
+}
+
+.logoWallHeadLi{
+	float:left;
+	margin:auto 15px;
+
+	list-style:none;
+}
+.logoWallTail{
+	padding:15px;
+	height:275px;
+	position:absolute;
+	top:45px;
+	left:0px;
+	display:none;
+	background-color:#eee;
+}
+.logoWallTail:first-child{
+	display:block;
+}
+.logoWallTail li{
+	float:left;
+	width:180px;
+	height:80px;
+	margin-right:15px;
+	margin-bottom:15px;
+	overflow:hidden;
+	background-color:#ccc;
+	list-style:none;
+
+
+
+}
+.logoWallTail li img{
+	/*display:block;*/
+}
+.logoOn{
+	color:#dd102e;
+	border-bottom:2px solid #
+}
+.slider{
+	border-bottom: 2px solid #dd102e;
+    height: 7px;
+    /*position: absolute;*/
+    left: 0;
+    width: 90px;
+    top: 36px;
+    text-align: center;
+    z-index: 1;
+   /* overflow: hidden;*/
+}
+
+
+.slider i{
+    border-width: 10px;
+    border-style: dashed dashed solid;
+    border-color: transparent transparent #dd102e;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    height: 0;
+    width: 0;
+    margin-top:-18px;
+}
+/*logo墙end*/
