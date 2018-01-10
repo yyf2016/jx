@@ -2851,7 +2851,7 @@ h4{
 	width:28px;
 	height:28px;
 	line-height:28px;
-	background:url(../imgs/public-24.png) no-repeat -103px -74px;;
+	background:url(../imgs/public-24.png) no-repeat -103px -74px;
 	margin-left:-36px;
 }
 
@@ -2877,7 +2877,43 @@ h4{
 .footerBoxTailLi li a:hover{
 	text-decoration:underline;
 }
-}
+
 /*底部尾部end*/
 
 /*footer end*/
+/*右边侧导航条start*/
+.rightNav{
+	width:35px;
+	background-color:#fff;
+	position:fixed;
+	top:0px;
+	right:0px;
+	padding-top:280px;
+}
+
+.rightNav li{
+	text-align:center;
+	padding-bottom:15px;
+	list-style:none;
+}
+.rightNav li i{
+	display:inline-block;
+	width:19px;
+	height:19px;
+	margin:5px 5px -4px 5px;
+	background:url(../imgs/public-24.png) no-repeat 0px -163px;
+}
+.rightNav li:nth-child(2) i{
+	background:url(../imgs/public-24.png) no-repeat -40px -163px;
+}
+.rightNav li:nth-child(3) i{
+	background:url(../imgs/public-24.png) no-repeat -80px -163px;
+}
+.rightNav li:nth-child(4) i{
+	background:url(../imgs/public-24.png) no-repeat -120px -163px;
+}
+.rightNav span{
+	font-size:12px;
+	
+}
+/*右边侧导航条end*/

@@ -665,5 +665,9 @@ $(".logoWallHeadLi").mouseover(function(){
 });
 // 界面转化end
 // logo墙end
+// 右边侧导航条start
+heightNav=$(window).height();
+$(".rightNav").css({"height":heightNav+"px"});
+// 右边侧导航条end
 }
 )
