@@ -2731,3 +2731,153 @@ h4{
      cursor:pointer;
 }
 /*品牌精品店end*/
+/*footer start*/
+.footer{
+	width:100%;
+	height:290px;
+	background-color:#333;
+}
+.footerBox{
+	width:1200px;
+	height:290px;
+	margin:15px auto;
+	/*border:1px solid #f00;*/
+}
+
+.footerBoxTop{
+	height:85px;
+	border-bottom:1px solid #666;
+}
+.footerBoxTopLeft{
+	float:left;
+	height:85px;
+}
+.footerBoxTopLeft i{
+	display:inline-block;
+	width:40px;
+	height:40px;
+	background:url(../imgs/public-24.png) no-repeat -144px -22px;
+	line-height:85px;
+	vertical-align:middle;
+	margin-left:8px;
+}
+.spanTel{
+	font-size:24px;
+	color:#c00;
+	font-weight:bold;
+	line-height:85px;
+	vertical-align:middle;
+	margin-left:8px;
+}
+.footerBoxTopLeft span:last-child{
+	color:#fff;
+	font-size:14px;
+	margin-left:8px;
+}
+.footerBoxTopRight{
+	float:right;
+}
+
+.footerBoxTopRight span{
+	color:#fff;
+	font-size:14px;
+	line-height:85px;
+	vertical-align:middle;
+}
+.inputText{
+	width: 190px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    background: 0;
+    border: 1px solid #444;
+    color: #999;
+    margin-left:5px;
+}
+.footerBoxTopRight i{
+	display: inline-block;
+    width: 22px;
+    height: 18px;
+    background:url(../imgs/public-24.png) no-repeat -133px 0px ;
+    cursor:pointer;
+    line-height:30px;
+    vertical-align:middle;
+    margin-left:-29px;
+}
+
+/*底部尾部start*/
+.footerBoxTailLi{
+	float:left;
+	color:#fff;
+	list-style:none;
+	padding:28px ;
+}
+.footerBoxTailI{
+	display:inline-block;
+	width:26px;
+	height:26px;
+	line-height:26px;
+	vertical-align:middle;
+	margin:9px;
+	background:url(../imgs/public-24.png) no-repeat  0px -131px;
+}
+.secondI{
+	background:url(../imgs/public-24.png) no-repeat -30px -131px;
+}
+.thirdI{
+	background:url(../imgs/public-24.png) no-repeat -60px -131px;
+	
+}
+.fourthI{
+	background:url(../imgs/public-24.png) no-repeat -90px -131px;
+	
+}
+.fivethI{
+	background:url(../imgs/public-24.png) no-repeat -120px -131px;
+	
+}
+.sixthI{
+	background:url(../imgs/public-24.png) no-repeat -150px -131px;
+	
+}
+.seventhI{
+	width:28px;
+	height:28px;
+	line-height:28px;
+	background:url(../imgs/public-24.png) no-repeat -140px -74px;;
+	
+}
+.eighthI{
+	width:28px;
+	height:28px;
+	line-height:28px;
+	background:url(../imgs/public-24.png) no-repeat -103px -74px;;
+	margin-left:-36px;
+}
+
+.specialSpan{
+	font-size:14px;
+	color:#fff;
+}
+
+
+
+.footerBoxTailLi li{
+	
+	list-style:none;
+    padding:0px 0px 5px 45px;
+   
+
+}
+.footerBoxTailLi li a{
+	text-decoration:none;
+	color:#ccc;
+	font-size:13px;
+}
+.footerBoxTailLi li a:hover{
+	text-decoration:underline;
+}
+}
+/*底部尾部end*/
+
+/*footer end*/
