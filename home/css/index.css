@@ -2889,19 +2889,22 @@ h4{
 	top:0px;
 	right:0px;
 	padding-top:280px;
+	border:1px solid #ddd;
+
 }
 
 .rightNav li{
 	text-align:center;
 	padding-bottom:15px;
 	list-style:none;
+
 }
 .rightNav li i{
 	display:inline-block;
 	width:19px;
 	height:19px;
 	margin:5px 5px -4px 5px;
-	background:url(../imgs/public-24.png) no-repeat 0px -163px;
+	background:url(../imgs/public-24.png) no-repeat -0px -163px;
 }
 .rightNav li:nth-child(2) i{
 	background:url(../imgs/public-24.png) no-repeat -40px -163px;
@@ -2915,5 +2918,48 @@ h4{
 .rightNav span{
 	font-size:12px;
 	
+}
+.rightNavPop{
+	width:271px;
+	height:283px;
+	background-color:#fff;
+	position:absolute;
+	text-align:center;
+	border:1px solid #ddd;
+
+
+}
+.rightNavPop-top{
+	height:114px;
+	/*background-color:#0f0;*/
+
+	
+}
+.rightNavPop-top img{
+	display:block;
+	float:left;
+	margin:13px 0px 15px 55px;
+	width:80px;
+	height:80px;
+	
+
+}
+.rightNavPop-top span{
+	line-height:100px;
+	margin-left:-20px;
+	color:#000!important;
+}
+.maskI{
+	position:absolute;
+	left:55px;
+	top:13px;
+	width:80px;
+	height:80px;
+	background:url(../imgs/mask.png) no-repeat;
+	margin-left:0px!important;
+}
+
+.rightNavPop-top a{
+   color:#c00;
 }
 /*右边侧导航条end*/

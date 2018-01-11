@@ -668,6 +668,29 @@ $(".logoWallHeadLi").mouseover(function(){
 // 右边侧导航条start
 heightNav=$(window).height();
 $(".rightNav").css({"height":heightNav+"px"});
+// 滑动特效start
+$(".rightNav li").mouseenter(function(){
+	indexNum=$(".rightNav li").index(this);
+	numX=$(this).find("i").css("background-position");
+	console.log(numX);
+	topNum=-indexNum*40-20+"px";
+	newNum=topNum+" "+"-163px";
+	$(this).find("i").css({"background-position":newNum});
+	$(this).css({"background-color":"#cf1c23","color":"#fff"});
+	navLeft=$(this).position().left-271;
+	navTop=$(this).position().top;
+	$(this).find(".rightNavPop").css({"left":navLeft+"px","top":navTop+"px"});
+
+});
+$(".rightNav li").mouseleave(function(){
+	indexNum=$(".rightNav li").index(this);
+	topNum=-indexNum*40+"px";
+	newNum=topNum+" "+"-163px";
+	$(this).find("i").css({"background-position":newNum});
+	$(this).css({"background-color":"#fff","color":"#000"});
+});
+// 滑动特效end
+
 // 右边侧导航条end
 }
 )
