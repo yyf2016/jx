@@ -2832,11 +2832,11 @@ h4{
 	background:url(../imgs/public-24.png) no-repeat -90px -131px;
 	
 }
-.fivethI{
+.FivethI{
 	background:url(../imgs/public-24.png) no-repeat -120px -131px;
 	
 }
-.sixthI{
+.FivethI{
 	background:url(../imgs/public-24.png) no-repeat -150px -131px;
 	
 }
@@ -3037,3 +3037,298 @@ h4{
 	background:url(../imgs/public-24.png) no-repeat -40px -186px;
 }
 /*右边侧导航条end*/
+/*左边导航条start*/
+
+.leftNav{
+	position:fixed;
+	left:50%;
+	top:335px;
+	width:40px;
+	height:205px;
+	/*background-color:#f00;*/
+    margin-left:-650px;
+    border:2px solid #f00;
+}
+/*第一个图标start*/
+.floorOne{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorOneOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorOneBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorOneBg .newindexIcon{
+	display:block;
+	width:12px;
+	height:20px;
+    margin-left:-6px;
+    margin-top:-10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat 0 -181px;
+    
+}
+/*第一个图标end*/
+/*第2个图标start*/
+.floorTwo{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorTwoOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorTwoBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorTwoBg .newindexIcon{
+	display:block;
+	width:8px;
+	height:21px;
+    margin-left:-4px;
+    margin-top:-10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -18px -180px;
+    
+}
+/*第2个图标end*/
+/*第3个图标start*/
+.floorThree{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorThreeOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorThreeBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorThreeBg .newindexIcon{
+	display:block;
+	width:20px;
+	height:20px;
+    margin-left:-10px;
+    margin-top:-10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -31px -181px;
+    
+}
+/*第3个图标end*/
+/*第4个图标start*/
+.floorFour{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorFourOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorFourBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorFourBg .newindexIcon{
+	display:block;
+	width:12px;
+	height:19px;
+    margin-left:-6px;
+    margin-top:-10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -56px -180px;
+    
+}
+/*第4个图标end*/
+/*第5个图标start*/
+.floorFive{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorFiveOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorFiveBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorFiveBg .newindexIcon{
+	display:block;
+	width:15px;
+	height:16px;
+    margin-left:-7px;
+    margin-top:-8px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -39px -213px;
+    
+}
+/*第5个图标end*/
+/*第6个图标start*/
+.floorSix{
+	text-align:center;
+	width:30px;
+	height:30px;
+	/*background-color:#f00;*/
+}
+.floorSixOn{
+	position:absolute;
+	width:30px;
+	height:30px;
+	font-size:12px;
+	color:#fff;
+	background-color:#d43d4e;
+	border-radius:30px;
+	line-height:30px;
+    display:none;
+    /*top:5px;
+    left:9px;
+*/
+}
+.floorSixBg{
+	display:block;
+	width:30px;
+	height:30px;
+	border-radius:30px;
+	background-color:#f1f1f1;
+
+	position:relative;
+	/*top:-30px;
+	height:-30px;
+*/
+	
+}
+.floorSixBg .newindexIcon{
+	display:block;
+	width:15px;
+	height:10px;
+    margin-left:-7px;
+    margin-top:-5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+	background:url(../imgs/newIndexIcon-24.png) no-repeat -74px -190px;
+    
+}
+/*第6个图标end*/
+/*左边导航条end*/

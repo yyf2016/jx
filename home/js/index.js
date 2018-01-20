@@ -693,5 +693,27 @@ $(".rightNav li").mouseleave(function(){
 // 滑动特效end
 
 // 右边侧导航条end
+// 左侧导航条start
+$(".leftNav .floorOne").mouseenter(function(){
+      $(this).find(".floorOneBg").hide();
+      $(this).find(".floorOneOn").css({"display":"block"});
+      htmlName=$(this).find(".floorOneOn").attr("name");
+      $(this).find(".floorOneOn").html(htmlName);
+      $(this).find(".floorOneOn").animate({"width":"70px"},500);
+});
+
+$(".leftNav .floorOne").mouseleave(function(){
+      
+      htmlName=$(this).find(".floorOneOn").attr("ref");
+      
+      $(this).find(".floorOneOn").animate({"width":"30px"},500,function(){
+      	$(this).find(".floorOneOn").html(htmlName);
+      	$(this).hide();
+      	$(".leftNav .floorOne").find(".floorOneBg").show();
+      });
+      
+});   
+     
+// 左侧导航条end
 }
 )
