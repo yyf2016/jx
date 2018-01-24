@@ -694,6 +694,7 @@ $(".rightNav li").mouseleave(function(){
 
 // 右边侧导航条end
 // 左侧导航条start
+// 导航第一图标start
 $(".leftNav .floorOne").mouseenter(function(){
       $(this).find(".floorOneBg").hide();
       $(this).find(".floorOneOn").css({"display":"block"});
@@ -713,7 +714,120 @@ $(".leftNav .floorOne").mouseleave(function(){
       });
       
 });   
+ // 导航第1图标end 
+ // 导航第2图标start
+$(".leftNav .floorTwo").mouseenter(function(){
+      $(this).find(".floorTwoBg").hide();
+      $(this).find(".floorTwoOn").css({"display":"block"});
+      htmlName=$(this).find(".floorTwoOn").attr("name");
+      $(this).find(".floorTwoOn").html(htmlName);
+      $(this).find(".floorTwoOn").animate({"width":"90px"},500);
+});
+
+$(".leftNav .floorTwo").mouseleave(function(){
+      
+      htmlName=$(this).find(".floorTwoOn").attr("ref");
+      
+      $(this).find(".floorTwoOn").animate({"width":"30px"},500,function(){
+      	$(this).find(".floorTwoOn").html(htmlName);
+      	$(this).hide();
+      	$(".leftNav .floorTwo").find(".floorTwoBg").show();
+      });
+      
+});   
+ // 导航第2图标end 
+ // 导航第3图标start
+$(".leftNav .floorThree").mouseenter(function(){
+      $(this).find(".floorThreeBg").hide();
+      $(this).find(".floorThreeOn").css({"display":"block"});
+      htmlName=$(this).find(".floorThreeOn").attr("name");
+      $(this).find(".floorThreeOn").html(htmlName);
+      $(this).find(".floorThreeOn").animate({"width":"70px"},500);
+});
+
+$(".leftNav .floorThree").mouseleave(function(){
+      
+      htmlName=$(this).find(".floorThreeOn").attr("ref");
+      
+      $(this).find(".floorThreeOn").animate({"width":"30px"},500,function(){
+      	$(this).find(".floorThreeOn").html(htmlName);
+      	$(this).hide();
+      	$(".leftNav .floorThree").find(".floorThreeBg").show();
+      });
+      
+});   
+ // 导航第3图标end 
+  // 导航第4图标start
+$(".leftNav .floorFour").mouseenter(function(){
+      $(this).find(".floorFourBg").hide();
+      $(this).find(".floorFourOn").css({"display":"block"});
+      htmlName=$(this).find(".floorFourOn").attr("name");
+      $(this).find(".floorFourOn").html(htmlName);
+      $(this).find(".floorFourOn").animate({"width":"130px"},500);
+});
+
+$(".leftNav .floorFour").mouseleave(function(){
+      
+      htmlName=$(this).find(".floorFourOn").attr("ref");
+      
+      $(this).find(".floorFourOn").animate({"width":"30px"},500,function(){
+      	$(this).find(".floorFourOn").html(htmlName);
+      	$(this).hide();
+      	$(".leftNav .floorFour").find(".floorFourBg").show();
+      });
+      
+});   
+ // 导航第4图标end 
+ // 导航第5图标start
+$(".leftNav .floorFive").mouseenter(function(){
+      $(this).find(".floorFiveBg").hide();
+      $(this).find(".floorFiveOn").css({"display":"block"});
+      htmlName=$(this).find(".floorFiveOn").attr("name");
+      $(this).find(".floorFiveOn").html(htmlName);
+      $(this).find(".floorFiveOn").animate({"width":"70px"},500);
+});
+
+$(".leftNav .floorFive").mouseleave(function(){
+      
+      htmlName=$(this).find(".floorFiveOn").attr("ref");
+      
+      $(this).find(".floorFiveOn").animate({"width":"30px"},500,function(){
+      	$(this).find(".floorFiveOn").html(htmlName);
+      	$(this).hide();
+      	$(".leftNav .floorFive").find(".floorFiveBg").show();
+      });
+      
+});   
+// 导航第5图标end 
+ // 导航第6图标start
+$(".leftNav .floorSix .floorSixBg").mouseenter(function(){
+    $(".leftNav .floorSix").find(".newindexIcon").css({"background-position":"-95px -190px"});
+});
+
+$(".leftNav .floorSix").mouseleave(function(){
+      $(".leftNav .floorSix .floorSixBg").find(".newindexIcon").css({"background-position":"-74px -190px"});
+      
      
+      
+});  
+$(".floorSix").click(function(){
+	$(window).scrollTop(0);
+});
+
+// 导航第6图标end
+ // 左侧导航条隐身start
+$(window).scroll(function(){
+	minTop=$(".whiteWine").offset().top;
+	scrollTop=$(window).scrollTop();
+	if(scrollTop<minTop-100){
+		
+	}else{
+		
+
+	}
+});
+
+ // 左侧导航条隐身end
 // 左侧导航条end
 }
 )
