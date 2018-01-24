@@ -1,0 +1,45 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.main{
+	margin:0 auto;
+	width:1200px;
+	height:2000px;
+	background-color:#f00;
+}
+.head{
+	height:100px;
+	width:1200px;
+	line-height:100px;
+	text-align:center;
+	font-size:60px;
+	background-color:#fff;
+}
+.info{
+	position:relative;
+}
+.infoHead{
+	height:60px;
+	width:1000px;
+	background-color:#0f0;
+	padding-left:200px;
+	
+}
+.infoHead li{
+	list-style:none;
+	float:left;
+	font-size:30px;
+	margin-right:50px;
+	cursor:pointer;
+
+}
+.infoBox{
+	position:absolute;
+	width:1200px;
+	height:600px;
+	display:none;
+	background-color:#00f;
+	top:60px;
+	right:0px;
+}
