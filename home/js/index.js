@@ -698,19 +698,20 @@ $(".rightNav li").mouseleave(function(){
 $(".leftNav .floorOne").mouseenter(function(){
       $(this).find(".floorOneBg").hide();
       $(this).find(".floorOneOn").css({"display":"block"});
-      htmlName=$(this).find(".floorOneOn").attr("name");
-      $(this).find(".floorOneOn").html(htmlName);
+      htmlName1=$(this).find(".floorOneOn").attr("name");
+      $(this).find(".floorOneOn").html(htmlName1);
       $(this).find(".floorOneOn").animate({"width":"70px"},500);
 });
 
 $(".leftNav .floorOne").mouseleave(function(){
       
-      htmlName=$(this).find(".floorOneOn").attr("ref");
+      htmlName1=$(this).find(".floorOneOn").attr("ref");
       
       $(this).find(".floorOneOn").animate({"width":"30px"},500,function(){
-      	$(this).find(".floorOneOn").html(htmlName);
+      	$(this).html(htmlName1);
       	$(this).hide();
       	$(".leftNav .floorOne").find(".floorOneBg").show();
+      	myscroll();
       });
       
 });   
@@ -719,19 +720,20 @@ $(".leftNav .floorOne").mouseleave(function(){
 $(".leftNav .floorTwo").mouseenter(function(){
       $(this).find(".floorTwoBg").hide();
       $(this).find(".floorTwoOn").css({"display":"block"});
-      htmlName=$(this).find(".floorTwoOn").attr("name");
-      $(this).find(".floorTwoOn").html(htmlName);
+      htmlName2=$(this).find(".floorTwoOn").attr("name");
+      $(this).find(".floorTwoOn").html(htmlName2);
       $(this).find(".floorTwoOn").animate({"width":"90px"},500);
 });
 
 $(".leftNav .floorTwo").mouseleave(function(){
       
-      htmlName=$(this).find(".floorTwoOn").attr("ref");
+      htmlName2=$(this).find(".floorTwoOn").attr("ref");
       
       $(this).find(".floorTwoOn").animate({"width":"30px"},500,function(){
-      	$(this).find(".floorTwoOn").html(htmlName);
+      	$(this).html(htmlName2);
       	$(this).hide();
       	$(".leftNav .floorTwo").find(".floorTwoBg").show();
+      	myscroll();
       });
       
 });   
@@ -740,19 +742,20 @@ $(".leftNav .floorTwo").mouseleave(function(){
 $(".leftNav .floorThree").mouseenter(function(){
       $(this).find(".floorThreeBg").hide();
       $(this).find(".floorThreeOn").css({"display":"block"});
-      htmlName=$(this).find(".floorThreeOn").attr("name");
-      $(this).find(".floorThreeOn").html(htmlName);
+      htmlName3=$(this).find(".floorThreeOn").attr("name");
+      $(this).find(".floorThreeOn").html(htmlName3);
       $(this).find(".floorThreeOn").animate({"width":"70px"},500);
 });
 
 $(".leftNav .floorThree").mouseleave(function(){
       
-      htmlName=$(this).find(".floorThreeOn").attr("ref");
+      htmlNam3=$(this).find(".floorThreeOn").attr("ref");
       
       $(this).find(".floorThreeOn").animate({"width":"30px"},500,function(){
-      	$(this).find(".floorThreeOn").html(htmlName);
+      	$(this).html(htmlName3);
       	$(this).hide();
       	$(".leftNav .floorThree").find(".floorThreeBg").show();
+      	myscroll();
       });
       
 });   
@@ -761,19 +764,20 @@ $(".leftNav .floorThree").mouseleave(function(){
 $(".leftNav .floorFour").mouseenter(function(){
       $(this).find(".floorFourBg").hide();
       $(this).find(".floorFourOn").css({"display":"block"});
-      htmlName=$(this).find(".floorFourOn").attr("name");
-      $(this).find(".floorFourOn").html(htmlName);
+      htmlName4=$(this).find(".floorFourOn").attr("name");
+      $(this).find(".floorFourOn").html(htmlName4);
       $(this).find(".floorFourOn").animate({"width":"130px"},500);
 });
 
 $(".leftNav .floorFour").mouseleave(function(){
       
-      htmlName=$(this).find(".floorFourOn").attr("ref");
+      htmlName4=$(this).find(".floorFourOn").attr("ref");
       
       $(this).find(".floorFourOn").animate({"width":"30px"},500,function(){
-      	$(this).find(".floorFourOn").html(htmlName);
+      	$(this).html(htmlName4);
       	$(this).hide();
       	$(".leftNav .floorFour").find(".floorFourBg").show();
+      	myscroll();
       });
       
 });   
@@ -782,19 +786,20 @@ $(".leftNav .floorFour").mouseleave(function(){
 $(".leftNav .floorFive").mouseenter(function(){
       $(this).find(".floorFiveBg").hide();
       $(this).find(".floorFiveOn").css({"display":"block"});
-      htmlName=$(this).find(".floorFiveOn").attr("name");
-      $(this).find(".floorFiveOn").html(htmlName);
+      htmlName5=$(this).find(".floorFiveOn").attr("name");
+      $(this).find(".floorFiveOn").html(htmlName5);
       $(this).find(".floorFiveOn").animate({"width":"70px"},500);
 });
 
 $(".leftNav .floorFive").mouseleave(function(){
       
-      htmlName=$(this).find(".floorFiveOn").attr("ref");
+      htmlName5=$(this).find(".floorFiveOn").attr("ref");
       
       $(this).find(".floorFiveOn").animate({"width":"30px"},500,function(){
-      	$(this).find(".floorFiveOn").html(htmlName);
+        $(this).html(htmlName5);
       	$(this).hide();
       	$(".leftNav .floorFive").find(".floorFiveBg").show();
+      	myscroll();
       });
       
 });   
@@ -813,19 +818,57 @@ $(".leftNav .floorSix").mouseleave(function(){
 $(".floorSix").click(function(){
 	$(window).scrollTop(0);
 });
+// 右侧导航条楼层灯开始
+function myscroll(){
+		st=$(window).scrollTop();
+		osFirst=$(".wineFloor:first").offset().top;
+		if(st>osFirst){
+			$(".leftNav").fadeIn();
+		   	$(".wineFloor").each(function(){
+		   	os=$(this).offset().top;
+		   	if(st>os){
+	   		// $(".leftNav").show();
+	   		nameTitle=$(this).find("i").html();
+	   		document.title=nameTitle;
+	   		$(".leftNav").find("a[ref="+nameTitle+"]").next().hide();
+	        $(".leftNav").find("a[ref="+nameTitle+"]").show();
+	        $(".leftNav").find("a[ref]").not($(".leftNav").find("a[ref="+nameTitle+"]")).hide();
+	        $(".floorOn").not($(".leftNav").find("a[ref="+nameTitle+"]").next()).show();
+	   	    }
+    });
+ }else{
+ 	$(".leftNav").fadeOut();
+ }; 
+}
+$(window).scroll(function(){
+	myscroll();
+  
+});
+// 右侧导航条楼层灯结束
 
 // 导航第6图标end
  // 左侧导航条隐身start
-$(window).scroll(function(){
-	minTop=$(".whiteWine").offset().top;
-	scrollTop=$(window).scrollTop();
-	if(scrollTop<minTop-100){
+// minTop=$(".whiteWine").offset().top;
+// $(window).scroll(function(){
+	
+// 	scrollTop=$(window).scrollTop();
+// 	num=$(".leftNav").attr("ref");
+// 	if(scrollTop<minTop-100&&num===1){
+//        $(".leftNav").attr("ref")=0;
+//        $(".leftNav").stop().transition({"scaleY":"1.5","opacity":"0"},1000);
 		
-	}else{
-		
+// 	};
+// 	if(scrollTop>=minTop-100&&num===0){
+// 		$(".leftNav").attr("ref")=1;
+//         $(".leftNav").stop().transition({"scaleY":"1","opacity":"1"},1000);
 
-	}
-});
+// 	};
+// });
+// $(".leftNav").click(function(){
+	
+// 	$(this).stop().transition({"scaleY":"1.5","opacity":"0"},1000);
+// });
+
 
  // 左侧导航条隐身end
 // 左侧导航条end

@@ -3050,8 +3050,8 @@ h4{
 	height:205px;
 	/*background-color:#f00;*/
     margin-left:-650px;
-    border:2px solid #f00;
-    /*opacity:0;*/
+   /* border:2px solid #f00;*/
+    display:none;
    
 }
 .classAS{
@@ -3099,9 +3099,9 @@ h4{
 	border-radius:30px;
 	line-height:30px;
     display:none;
-    /*top:5px;
-    left:9px;
-*/
+    /*top:5px;*/
+    left:0px;
+
 }
 .floorOneBg{
 	display:block;
@@ -3146,9 +3146,9 @@ h4{
 	border-radius:30px;
 	line-height:30px;
     display:none;
-    /*top:5px;
-    left:9px;
-*/
+    /*top:5px;*/
+    left:0px;
+
 }
 .floorTwoBg{
 	display:block;
@@ -3193,9 +3193,9 @@ h4{
 	border-radius:30px;
 	line-height:30px;
     display:none;
-    /*top:5px;
-    left:9px;
-*/
+    /*top:5px;*/
+    left:0px;
+
 }
 .floorThreeBg{
 	display:block;
@@ -3240,9 +3240,9 @@ h4{
 	border-radius:30px;
 	line-height:30px;
     display:none;
-    /*top:5px;
-    left:9px;
-*/
+    /*top:5px;*/
+    left:0px;
+
 }
 .floorFourBg{
 	display:block;
@@ -3287,9 +3287,9 @@ h4{
 	border-radius:30px;
 	line-height:30px;
     display:none;
-    /*top:5px;
-    left:9px;
-*/
+    /*top:5px;*/
+    left:0px;
+
 }
 .floorFiveBg{
 	display:block;
